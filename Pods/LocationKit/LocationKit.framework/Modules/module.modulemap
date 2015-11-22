@@ -1,0 +1,6 @@
+framework module LocationKit {
+  umbrella header "LocationKit.h"
+
+  export *
+  module * { export * }
+}

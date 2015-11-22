@@ -1,0 +1,1 @@
+../../../../LocationKit/LocationKit.framework/Headers/LKSearchRequest.h

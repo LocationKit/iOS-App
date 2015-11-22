@@ -1,0 +1,1 @@
+../../../../LocationKit/LocationKit.framework/Headers/LKLocationManager.h
