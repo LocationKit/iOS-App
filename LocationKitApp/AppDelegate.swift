@@ -32,10 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
             
             if newValue {
                 locationManager.startMonitoringVisits()
-                locationManager.startUpdatingLocation()
             } else {
                 locationManager.stopMonitoringVisits()
-                locationManager.stopUpdatingLocation()
             }
         }
     }

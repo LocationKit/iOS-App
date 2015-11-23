@@ -19,11 +19,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>just because</string>
+	<string>In order to show you where you&apos;ve been, we need access to your location</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
