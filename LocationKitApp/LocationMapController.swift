@@ -32,7 +32,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         mapView.delegate = self
         
         if let recentDayVisitInfo = appDelegate.allLocationItems.first, locationItem = recentDayVisitInfo.locationItems.first {
-            showMap(locationItem.coordinate, aniamted: false)
+            showMap(locationItem.coordinate, animated: false)
         }
         
         mapView.showsUserLocation = true
@@ -134,9 +134,9 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    func showMap(coordinate: CLLocationCoordinate2D, aniamted: Bool) {
+    func showMap(coordinate: CLLocationCoordinate2D, animated: Bool) {
         let region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
-        mapView.setRegion(region, animated: aniamted)
+        mapView.setRegion(region, animated: animated)
     }
     
     private var dataPath: String {
@@ -177,7 +177,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     private func showHomeLocation() {
         appDelegate.locationManager.requestHomeAddress() { [weak self] (placemark, error) in
             if let home = placemark, homeLocation = home.location {
-                self?.showMap(homeLocation.coordinate, aniamted: true)
+                self?.showMap(homeLocation.coordinate, animated: true)
             } else {
                 self?.showErrorMessage("Could not find Home location")
             }
@@ -187,7 +187,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     private func showWorkLocation() {
         appDelegate.locationManager.requestWorkAddress() { [weak self] (placemark, error) in
             if let work = placemark, workLocation = work.location {
-                self?.showMap(workLocation.coordinate, aniamted: true)
+                self?.showMap(workLocation.coordinate, animated: true)
             } else {
                 self?.showErrorMessage("Could not find Work location")
             }

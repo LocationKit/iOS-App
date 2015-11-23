@@ -70,7 +70,7 @@ class LocationVisitsController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         let locationItem = locationItemForIndexPath(indexPath)
-        locationMapController.showMap(locationItem.coordinate, aniamted: true)
+        locationMapController.showMap(locationItem.coordinate, animated: true)
     }
     
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {

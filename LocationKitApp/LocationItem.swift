@@ -121,7 +121,7 @@ class LocationItem: NSObject, NSCoding {
 
         let city: String
         let state: String
-        let postcalCode: String
+        let postalCode: String
         
         if let name = place.locality {
             city = name
@@ -136,12 +136,12 @@ class LocationItem: NSObject, NSCoding {
         }
         
         if let name = place.postalCode {
-            postcalCode = name
+            postalCode = name
         } else {
-            postcalCode = ""
+            postalCode = ""
         }
         
-        let csvText = "\(title),\(LocationItem.dayFormatter.stringFromDate(date)),\(LocationItem.timeFormatter.stringFromDate(date)),\(departureText),\(coordinate.latitude),\(coordinate.longitude),\(flagged ? "1" : ""), \(venueName),\(streetName),\(city),\(state),\(postcalCode)"
+        let csvText = "\(title),\(LocationItem.dayFormatter.stringFromDate(date)),\(LocationItem.timeFormatter.stringFromDate(date)),\(departureText),\(coordinate.latitude),\(coordinate.longitude),\(flagged ? "1" : ""), \(venueName),\(streetName),\(city),\(state),\(postalCode)"
         return csvText
         
     }
