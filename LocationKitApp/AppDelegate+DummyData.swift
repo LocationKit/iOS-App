@@ -54,14 +54,9 @@ extension AppDelegate {
         let departureDate3 = arrivalDate2.dateByAddingTimeInterval((60.0 * 125.0 * -1.0))
         let arrivalDate3 = departureDate3.dateByAddingTimeInterval(60.0 * 44.0 * -1.0)
         
-        let visit1 = DummyVisit(arrivalDate: arrivalDate1, departureDate: departureDate1)
-        visit1.place = placemark1
-        
-        let visit2 = DummyVisit(arrivalDate: arrivalDate2, departureDate: departureDate2)
-        visit2.place = placemark2
-        
-        let visit3 = DummyVisit(arrivalDate: arrivalDate3, departureDate: departureDate3)
-        visit3.place = placemark3
+        let visit1 = DummyVisit(arrivalDate: arrivalDate1, departureDate: departureDate1, place: placemark1)
+        let visit2 = DummyVisit(arrivalDate: arrivalDate2, departureDate: departureDate2, place: placemark2)
+        let visit3 = DummyVisit(arrivalDate: arrivalDate3, departureDate: departureDate3, place: placemark3)
         
         addLocationItem(LocationItem(visit: visit1))
         addLocationItem(LocationItem(visit: visit2))
@@ -127,10 +122,12 @@ class DummyPlacemark: LKPlacemark {
 class DummyVisit: LKVisit {
     private let _arrivalDate: NSDate
     private let _departureDate: NSDate
+    private let _place: LKPlacemark
     
-    init(arrivalDate: NSDate, departureDate: NSDate) {
+    init(arrivalDate: NSDate, departureDate: NSDate, place: LKPlacemark) {
         _arrivalDate = arrivalDate
         _departureDate = departureDate
+        _place = place
         super.init()
     }
     
@@ -138,11 +135,13 @@ class DummyVisit: LKVisit {
         super.encodeWithCoder(aCoder)
         aCoder.encodeObject(_arrivalDate, forKey: "arrivalDate")
         aCoder.encodeObject(_departureDate, forKey: "departureDate")
+        aCoder.encodeObject(_place, forKey: "place")
     }
     
     @objc required init?(coder aDecoder: NSCoder) {
         _arrivalDate = aDecoder.decodeObjectForKey("arrivalDate") as! NSDate
         _departureDate = aDecoder.decodeObjectForKey("departureDate") as! NSDate
+        _place = aDecoder.decodeObjectForKey("place") as! LKPlacemark
         super.init(coder: aDecoder)
     }
     
@@ -155,9 +154,13 @@ class DummyVisit: LKVisit {
     override var departureDate: NSDate {
         return _departureDate
     }
+
+    override var place: LKPlacemark {
+        return _place;
+    }
     
     override var coordinate: CLLocationCoordinate2D {
-        return place.location!.coordinate
+        return _place.location!.coordinate
     }
 
 }
