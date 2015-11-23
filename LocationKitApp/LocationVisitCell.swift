@@ -60,7 +60,7 @@ class LocationVisitCell: UITableViewCell {
         if let categoryName = placemark.venue?.category {
             categoryText = "Categories: \(categoryName)"
             
-            if let subcategoryName = placemark.venue?.subcategory {
+            if let subcategoryName = placemark.venue?.subcategory where !subcategoryName.isEmpty {
                 categoryText += " : \(subcategoryName)"
                 categoryImageView.image = UIImage(named: subcategoryName) ?? UIImage(named: categoryName) ?? LocationVisitCell.unknownCategoryImage
             } else {
