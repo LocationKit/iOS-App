@@ -144,6 +144,25 @@ typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
 @property(nonatomic) BOOL useCMMotionActivityManager;
 
 /*
+ * suppressLocationPermissionDialog
+ *
+ * Discussion:
+ *     By default, LocationKit will automatically surface the iOS permissions dialog for location
+ *     permissions. We do this to make it super easy for developers new to Location to get started
+ *     and not have to deal with the complexities therein.
+ *
+ *     However, many developers have requested that they be able to suppress that dialog and display
+ *     it on their own accord. So the default is that LocationKit will automatically surface the
+ *     permission dialog, but you can override that behavior by enabling this property.
+ *
+ *     Note, you'll have to set this immediately after instantiating LKLocationManager prior to
+ *     calling anything else that will start updating the location (e.g. `startUpdatingLocation` or
+ *     `startMonitoringVisits` or `startMonitoringForRegion`) as they'll trigger the auto prompt so
+ *     you'll need to set this before they do their thing.
+ */
+@property(nonatomic) BOOL suppressLocationPermissionDialog;
+
+/*
  * requestPlace:
  *
  * Discussion:
@@ -258,6 +277,8 @@ typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
 
 - (void)startMonitoringForRegion:(CLRegion* _Nonnull)region;
 - (void)stopMonitoringForRegion:(CLRegion* _Nonnull)region;
+
+
 
 
 /*

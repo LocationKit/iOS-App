@@ -61,7 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
         
         if trackingEnabled {
             locationManager.startMonitoringVisits()
-            locationManager.startUpdatingLocation()
         }
         
         return true

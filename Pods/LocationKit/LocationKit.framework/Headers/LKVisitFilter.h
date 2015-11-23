@@ -18,5 +18,10 @@
 + (LKVisitFilter *)anyVenue;
 + (BOOL)hasAnyValue:(NSArray *)array;
 
+-(LKVisitFilter *)initWithVenueName:(NSString *)venueName venueCategory:(NSString *)venueCategory;
+-(LKVisitFilter *)initWithVenueCategory:(NSString *)venueCategory venueName:(NSString *)venueName;
+-(LKVisitFilter *)initWithVenueName:(NSString *)venueName;
+-(LKVisitFilter *)initWithVenueCategory:(NSString *)venueCategory;
+
 - (id)initWithJson:(NSDictionary *)dictionary;
 @end
