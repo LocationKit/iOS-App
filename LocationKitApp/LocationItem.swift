@@ -42,7 +42,15 @@ class LocationItem: NSObject, NSCoding {
         placemarkDate = nil
         placemarkCoordinate = nil
     }
-    
+
+    var title: String {
+        if visit != nil {
+            return visit!.place.name ?? "\(visit!.place.subThoroughfare) \(visit!.place.thoroughfare)"
+        } else {
+            return placemark!.venue!.name ?? "\(placemark!.subThoroughfare) \(placemark!.thoroughfare)"
+        }
+    }
+
     var place: LKPlacemark {
         return placemark ?? visit!.place
     }

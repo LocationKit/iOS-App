@@ -55,9 +55,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
             for locationItem in dayInfo.locationItems {
                 let pin = MKPointAnnotation()
                 pin.coordinate = locationItem.coordinate
-                if let venueName = locationItem.visit?.place.venue?.name {
-                    pin.title = venueName
-                }
+                pin.title = locationItem.title
                 
                 if isFirst {
                     isFirst = false
@@ -215,16 +213,26 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     
     // MARK: Map delegate
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier("visitPin")
         guard annotation !== mapView.userLocation else {
             return nil
         }
-        
-        let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "visitPin")
-        if let subtitle = annotation.subtitle where subtitle == "Current" {
-            pinView.pinColor = .Red
+
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "visitPin")
+            pinView!.canShowCallout = true
         } else {
-            pinView.pinColor = .Green
+            pinView!.annotation = annotation
         }
+
+        if let pin = pinView as? MKPinAnnotationView {
+            if let subtitle = annotation.subtitle where subtitle == "Current" {
+                pin.pinColor = .Red
+            } else {
+                pin.pinColor = .Green
+            }
+        }
+
         return pinView
     }
 
