@@ -19,6 +19,8 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     
     private var locationPins: [MKPointAnnotation] = []
     private var locationHistoryObserver: AnyObject!
+    private var backgroundObserver: AnyObject!
+    private var foregroundObserver: AnyObject!
 
     private var appDelegate: AppDelegate {
         return UIApplication.sharedApplication().delegate as! AppDelegate
@@ -37,7 +39,16 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         }
         
         mapView.showsUserLocation = true
-        
+
+        backgroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.didEnterBackground, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
+            // We basically need to do this because Apple will keep a high powered Location Manager instance
+            // around to show the blue user dot, but we don't want that when the app is in the background
+            // as it'll result in additional, unwanted, battery drain
+            self?.mapView.showsUserLocation = false
+        }
+        foregroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.didEnterForeground, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
+            self?.mapView.showsUserLocation = true
+        }
         locationHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
             self?.loadPins()
         }
