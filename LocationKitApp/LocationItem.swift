@@ -44,10 +44,15 @@ class LocationItem: NSObject, NSCoding {
     }
 
     var title: String {
-        if visit != nil {
-            return visit!.place.name ?? "\(visit!.place.subThoroughfare) \(visit!.place.thoroughfare)"
+        if let visit = visit {
+            return visit.place.name ?? "\(visit.place.subThoroughfare) \(visit.place.thoroughfare)"
+            
+        } else if let placemark = placemark {
+            return placemark.venue?.name ?? "\(placemark.subThoroughfare) \(placemark.thoroughfare)"
+            
         } else {
-            return placemark!.venue!.name ?? "\(placemark!.subThoroughfare) \(placemark!.thoroughfare)"
+            assert(false, "LocationItem in invalid state. this should never happen")
+            return ""
         }
     }
 
