@@ -210,10 +210,15 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     private func addPlace(place: LKPlacemark, coordinate: CLLocationCoordinate2D) {
         let locationItem = LocationItem(place: place, date: NSDate(), coordinate: coordinate)
         appDelegate.addLocationItem(locationItem)
+        showMap(coordinate, animated: true)
     }
     
     // MARK: Map delegate
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        guard annotation !== mapView.userLocation else {
+            return nil
+        }
+        
         let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "visitPin")
         if let subtitle = annotation.subtitle where subtitle == "Current" {
             pinView.pinColor = .Red

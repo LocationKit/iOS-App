@@ -8,6 +8,7 @@
 
 import Foundation
 import LocationKit
+import CoreLocation
 
 extension AppDelegate {
     
@@ -17,7 +18,19 @@ extension AppDelegate {
         if let locationHistory = NSKeyedUnarchiver.unarchiveObjectWithFile(dataPath) as? [DayLocationInfo] {
             allLocationItems = locationHistory
         } else {
+            pollForLocationAuthorization()
             loadDummyData()
+        }
+    }
+    
+    func pollForLocationAuthorization() {
+        if CLLocationManager.authorizationStatus() == .NotDetermined {
+            NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("pollForLocationAuthorization"), userInfo: nil, repeats: false)
+            
+        } else if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
+            if let navController = window?.rootViewController as? UINavigationController, mapController = navController.topViewController as? LocationMapController {
+                mapController.addCurrentPlace()
+            }
         }
     }
     
