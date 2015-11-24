@@ -15,6 +15,7 @@ import MessageUI
 class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeViewControllerDelegate {
     
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet var actionButton: UIBarButtonItem!
     
     private var locationPins: [MKPointAnnotation] = []
     private var locationHistoryObserver: AnyObject!
@@ -130,6 +131,11 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         
         let someAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alertController.addAction(someAction)
+        
+        if let presenter = alertController.popoverPresentationController {
+            presenter.barButtonItem = actionButton
+            presenter.sourceView = self.view
+        }
         
         presentViewController(alertController, animated: true, completion: nil)
     }

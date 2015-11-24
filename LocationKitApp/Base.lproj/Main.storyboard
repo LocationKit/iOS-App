@@ -262,6 +262,7 @@ Washington DC 22001</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="actionButton" destination="Ur4-zY-ggw" id="Jeb-Zm-0AO"/>
                         <outlet property="mapView" destination="phB-5f-5Zd" id="I7G-Gg-LPs"/>
                     </connections>
                 </viewController>
