@@ -48,6 +48,10 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         }
         foregroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.didEnterForeground, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
             self?.mapView.showsUserLocation = true
+            // Center map on user's current location
+            if let loc = self?.mapView.userLocation.location {
+                self?.mapView.setCenterCoordinate(loc.coordinate, animated: true)
+            }
         }
         locationHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
             self?.loadPins()
