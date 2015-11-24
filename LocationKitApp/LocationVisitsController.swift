@@ -77,14 +77,14 @@ class LocationVisitsController: UITableViewController {
         let flag: UITableViewRowAction
         let locationItem = self.appDelegate.allLocationItems[indexPath.section].locationItems[indexPath.row]
         if locationItem.flagged {
-            flag = UITableViewRowAction(style: .Normal, title: "Unflag") { [unowned self] _ in
+            flag = UITableViewRowAction(style: .Normal, title: "Unflag as Incorrect") { [unowned self] _ in
                 locationItem.flagged = false
                 tableView.editing = false
                 tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .None)
                 self.appDelegate.saveLocationHistory()
             }
         } else {
-            flag = UITableViewRowAction(style: .Normal, title: "Flag") { [unowned self] _ in
+            flag = UITableViewRowAction(style: .Normal, title: "Flag as Incorrect") { [unowned self] _ in
                 locationItem.flagged = true
                 tableView.editing = false
                 tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .None)
