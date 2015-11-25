@@ -74,7 +74,16 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
                 
                 if isFirst {
                     isFirst = false
+
                     if let departureDate = locationItem.visit?.departureDate where departureDate == NSDate.distantFuture() {
+                        // If departureDate is distant future, it is current
+                        pin.subtitle = "Current"
+                    } else if (locationItem.visit == nil) {
+                        // If this isn't a visit but was manually triggered, it is current
+                        pin.subtitle = "Current"
+                    } else if locationItem.visit?.departureDate == nil {
+                        // This shouldn't hit, but as a failsafe, in case there was an issue serializing/deserializing
+                        // or something, if there is no departureDate on this first visit, it's current
                         pin.subtitle = "Current"
                     }
                 }

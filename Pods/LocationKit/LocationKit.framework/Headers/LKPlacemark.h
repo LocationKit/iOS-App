@@ -124,5 +124,14 @@
  */
 @property(nonatomic, readonly, strong, nullable) NSArray<LKPlacemark *> *alternatives;
 
+/*
+ * locationKitEntrance
+ *
+ * Discussion:
+ *     Which internal process we used as the source of this venue detection -- from our
+ *     proprietary entrance and storefront database, from our building polygons and parcel
+ *     polygons, or from some third-party source. For diagnostic purposes only.
+ */
+@property(nonatomic, readonly, strong, nullable) NSString *locationKitEntranceSource;
 
 @end
