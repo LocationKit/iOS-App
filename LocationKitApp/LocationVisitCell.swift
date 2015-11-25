@@ -26,6 +26,8 @@ class LocationVisitCell: UITableViewCell {
     @IBOutlet var placeView: UIView!
     @IBOutlet var timeLabel: UILabel!
     
+    @IBOutlet weak var detectionMethodLabel: UILabel!
+
     override class func initialize() {
         timeFormatter.dateStyle = .NoStyle
         timeFormatter.timeStyle = .ShortStyle
@@ -90,6 +92,13 @@ class LocationVisitCell: UITableViewCell {
         
         // populate flagged view
         flaggedView.hidden = !locationItem.flagged
+
+        // populate detection method label
+        if let source = placemark.locationKitEntranceSource {
+            detectionMethodLabel.text = "Detection Method: \(source)"
+        } else {
+            detectionMethodLabel.text = "Detection Method: Unknown"
+        }
     }    
 }
 
