@@ -39,10 +39,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
             }
         }
     }
-    
+
+    private let notificationsKey = "com.socialradar.LocationKitApp.notificationsEnabled"
+    var notificationsEnabled: Bool {
+        get {
+            return NSUserDefaults.standardUserDefaults().boolForKey(notificationsKey)
+        }
+        set {
+            NSUserDefaults.standardUserDefaults().setBool(newValue, forKey: notificationsKey)
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+
     // MARK: LKLocationManagerDelegate
     func locationManager(manager: LKLocationManager, didStartVisit visit: LKVisit) {
-        addLocationItem(LocationItem(visit: visit))
+        let locationItem = LocationItem(visit: visit)
+
+        // Add this item
+        addLocationItem(locationItem)
+
+        // If enabled, display a local notification
+        if notificationsEnabled {
+            let localNotification = UILocalNotification()
+            localNotification.alertBody = "Visit started at \(locationItem.title)"
+            localNotification.timeZone = NSTimeZone.localTimeZone()
+            localNotification.fireDate = NSDate()
+            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        }
     }
     
     func locationManager(manager: LKLocationManager, didEndVisit visit: LKVisit) {
@@ -55,6 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         NSUserDefaults.standardUserDefaults().registerDefaults([trackingKey: true])
+        NSUserDefaults.standardUserDefaults().registerDefaults([notificationsKey: true])
         loadLocationHistory()
         
         locationManager = LKLocationManager()
@@ -64,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
         if trackingEnabled {
             locationManager.startMonitoringVisits()
         }
-        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil))
         return true
     }
 

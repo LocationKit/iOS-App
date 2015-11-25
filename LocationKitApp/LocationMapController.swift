@@ -131,7 +131,19 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
             }
         }
         alertController.addAction(trackingAction)
-        
+
+        let notificationsAction: UIAlertAction
+        if appDelegate.notificationsEnabled {
+            notificationsAction = UIAlertAction(title: "Disable Visit Notifications", style: .Default) { [weak self] _ in
+                self?.appDelegate.notificationsEnabled = false
+            }
+        } else {
+            notificationsAction = UIAlertAction(title: "Enable Visit Notifications", style: .Default) { [weak self] _ in
+                self?.appDelegate.notificationsEnabled = true
+            }
+        }
+        alertController.addAction(notificationsAction)
+
 //        let showHomeAction = UIAlertAction(title: "Show Home Location", style: .Default) { [weak self] _ in
 //            self?.showHomeLocation()
 //        }
