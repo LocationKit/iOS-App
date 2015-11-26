@@ -81,9 +81,9 @@ class LocationVisitCell: UITableViewCell {
             // populate arrival and depature times
             arrivalLabel.text = LocationVisitCell.timeFormatter.stringFromDate(visit.arrivalDate)
             if visit.departureDate != NSDate.distantFuture() {
-                depatureLabel.text = LocationVisitCell.timeFormatter.stringFromDate(visit.departureDate)
+                depatureLabel.text = LocationVisitCell.timeFormatter.stringFromDate(visit.departureDate)
             } else {
-                departureLabel.text = ""
+                depatureLabel.text = ""
             }
         } else {
             visitView.hidden = true
