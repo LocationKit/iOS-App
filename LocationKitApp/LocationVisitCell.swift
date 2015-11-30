@@ -39,8 +39,14 @@ class LocationVisitCell: UITableViewCell {
         
         var placeText: String = ""
         if let venueName = placemark.venue?.name {
+            var truncatedVenueName: String
             // Truncate venue name to 30 chars to prevent wrapping
-            let truncatedVenueName = venueName.substringWithRange(Range<String.Index>(start: venueName.startIndex, end: venueName.startIndex.advancedBy(30)))
+            if venueName.characters.count > 27 {
+                truncatedVenueName = venueName.substringWithRange(Range<String.Index>(start: venueName.startIndex, end: venueName.startIndex.advancedBy(27))) + "..."
+            } else {
+                truncatedVenueName = venueName
+            }
+
             placeText += truncatedVenueName + "\n"
         }
         if let streetName = placemark.thoroughfare {
