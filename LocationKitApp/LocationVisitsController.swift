@@ -40,15 +40,27 @@ class LocationVisitsController: UITableViewController {
     
     // MARK: UITableViewDataSource
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return appDelegate.allLocationItems[section].formattedDayText
+        if appDelegate.allLocationItems.count == 0 {
+            return "We will have your first location in just a few minutes..."
+        } else {
+            return appDelegate.allLocationItems[section].formattedDayText
+        }
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return appDelegate.allLocationItems.count
+        if appDelegate.allLocationItems.count == 0 {
+            return 1
+        } else {
+            return appDelegate.allLocationItems.count
+        }
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return appDelegate.allLocationItems[section].locationItems.count
+        if appDelegate.allLocationItems.count == 0 {
+            return 0
+        } else {
+            return appDelegate.allLocationItems[section].locationItems.count
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
