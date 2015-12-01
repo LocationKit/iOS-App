@@ -156,6 +156,11 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         }
         alertController.addAction(notificationsAction)
 
+        let howItWorksAction = UIAlertAction(title: "How does this work?", style: .Default) { [weak self] _ in
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://locationkit.io/features/")!)
+        }
+        alertController.addAction(howItWorksAction)
+
 //        let showHomeAction = UIAlertAction(title: "Show Home Location", style: .Default) { [weak self] _ in
 //            self?.showHomeLocation()
 //        }
