@@ -5,3 +5,5 @@ We've open sourced this sample app to showcase our venue detection and show how 
 You can clone it and install it on your phone if you want to see how our venue detection works. (it's not on the App Store yet)
 
 It's a very simple app which will show you a list of places you've visited, when you arrived, when you left, along with a map of those places.
+
+![LocationKit iOS App Screenshot](https://cdn.socialradar.com/images/LocationKit%20Screenshot.jpg "LocationKit iOS App Screenshot")
