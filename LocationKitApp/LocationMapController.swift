@@ -66,6 +66,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         var isFirst = true
         
         var pins: [MKPointAnnotation] = []
+        var currentLocation = CLLocationCoordinate2D()
         for dayInfo in appDelegate.allLocationItems {
             for locationItem in dayInfo.locationItems {
                 let pin = MKPointAnnotation()
@@ -86,12 +87,14 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
                         // or something, if there is no departureDate on this first visit, it's current
                         pin.subtitle = "Current"
                     }
+                    currentLocation = pin.coordinate
                 }
                 pins.append(pin)
             }
         }
         mapView.addAnnotations(pins)
         locationPins = pins
+        showMap(currentLocation, animated: true)
     }
     
     // MARK: Actions
