@@ -66,7 +66,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         var isFirst = true
         
         var pins: [MKPointAnnotation] = []
-        var currentLocation = CLLocationCoordinate2D()
+        var currentLocation = mapView.centerCoordinate
         for dayInfo in appDelegate.allLocationItems {
             for locationItem in dayInfo.locationItems {
                 let pin = MKPointAnnotation()
@@ -156,7 +156,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         }
         alertController.addAction(notificationsAction)
 
-        let howItWorksAction = UIAlertAction(title: "How does this work?", style: .Default) { [weak self] _ in
+        let howItWorksAction = UIAlertAction(title: "How does LocationKit work?", style: .Default) { [weak self] _ in
             UIApplication.sharedApplication().openURL(NSURL(string: "https://locationkit.io/features/")!)
         }
         alertController.addAction(howItWorksAction)
@@ -183,7 +183,18 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     }
     
     func showMap(coordinate: CLLocationCoordinate2D, animated: Bool) {
-        let region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
+        var region: MKCoordinateRegion
+        // This is what MapKit sends us if we don't have a location yet
+        let nullLocation = MKMapPointForCoordinate(CLLocationCoordinate2DMake(30.0, -40.0))
+        let currentLocation = MKMapPointForCoordinate(coordinate)
+        let isNullLocation = MKMetersBetweenMapPoints(nullLocation, currentLocation) < 100
+        if isNullLocation {
+            // Roughly center on the contiguous United States as the default when we don't have a location
+            region = MKCoordinateRegion(center: CLLocationCoordinate2DMake(39.833333, -98.583333), span: MKCoordinateSpan(latitudeDelta: 26.0, longitudeDelta: 26.0))
+        } else {
+            // If we have a location, center on that
+            region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
+        }
         mapView.setRegion(region, animated: animated)
     }
     

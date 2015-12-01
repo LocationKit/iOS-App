@@ -41,7 +41,7 @@ class LocationVisitsController: UITableViewController {
     // MARK: UITableViewDataSource
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if appDelegate.allLocationItems.count == 0 {
-            return "We will have your first location in just a few minutes..."
+            return "We are currently computing your\ncoordinates and will have your first\nlocation in just a few minutes..."
         } else {
             return appDelegate.allLocationItems[section].formattedDayText
         }
