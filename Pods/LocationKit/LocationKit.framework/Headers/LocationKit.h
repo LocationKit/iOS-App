@@ -3,6 +3,12 @@
 // Copyright (c) 2015 SocialRadar. All rights reserved.
 //
 
+/*
+ * LKLocationManager.h
+ *
+ * Discussion:
+ *     Main entry point for using LocationKit.
+ */
 #import "LKLocationManager.h"
 
 #import "LKEvent.h"
