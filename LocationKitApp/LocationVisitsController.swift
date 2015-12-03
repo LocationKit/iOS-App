@@ -103,9 +103,10 @@ class LocationVisitsController: UITableViewController {
         }
         flag.backgroundColor = UIColor.lightGrayColor()
 
-        // If the first item in the list is a visit, we don't want the user to be able to  delete it (because
-        // it's currently ongoing and that'll create a data mess when we get the end visit notification)
-        if indexPath.section == 0 && indexPath.indexAtPosition(1) == 0 && locationItem.visit != nil {
+        // If the first item in the list is a visit that has a start but no end, we don't want the user
+        // to be able to delete it (because it's currently ongoing and that'll create a data mess when
+        // we get the end visit notification)
+        if indexPath.section == 0 && indexPath.indexAtPosition(1) == 0 && locationItem.visit != nil && locationItem.visit!.departureDate == NSDate.distantFuture() {
             return [flag]
         } else {
             let delete = UITableViewRowAction(style: .Normal, title: "Delete") { [unowned self] _ in
