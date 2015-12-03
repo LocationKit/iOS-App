@@ -24,8 +24,18 @@ class LocationVisitsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        if appDelegate.allLocationItems.count == 0 {
+            let emptyLabel = UILabel(frame: CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height))
+            emptyLabel.text = "We are currently computing your\n coordinates and will have your first\n location in just a few minutes..."
+            emptyLabel.textAlignment = NSTextAlignment.Center
+            emptyLabel.lineBreakMode = .ByWordWrapping
+            emptyLabel.numberOfLines = 0
+            self.tableView.backgroundView = emptyLabel
+        }
+
         visitHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
+            self?.tableView.backgroundView = nil
             self?.tableView.reloadData()
         }
     }
@@ -40,27 +50,15 @@ class LocationVisitsController: UITableViewController {
     
     // MARK: UITableViewDataSource
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if appDelegate.allLocationItems.count == 0 {
-            return "We are currently computing your\ncoordinates and will have your first\nlocation in just a few minutes..."
-        } else {
-            return appDelegate.allLocationItems[section].formattedDayText
-        }
+        return appDelegate.allLocationItems[section].formattedDayText
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        if appDelegate.allLocationItems.count == 0 {
-            return 1
-        } else {
-            return appDelegate.allLocationItems.count
-        }
+        return appDelegate.allLocationItems.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if appDelegate.allLocationItems.count == 0 {
-            return 0
-        } else {
-            return appDelegate.allLocationItems[section].locationItems.count
-        }
+        return appDelegate.allLocationItems[section].locationItems.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
