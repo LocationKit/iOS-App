@@ -17,7 +17,7 @@ extension AppDelegate {
         if let locationHistory = NSKeyedUnarchiver.unarchiveObjectWithFile(dataPath) as? [DayLocationInfo] {
             allLocationItems = locationHistory
         } else {
-            loadDummyData()
+            // loadDummyData()
         }
     }
 
