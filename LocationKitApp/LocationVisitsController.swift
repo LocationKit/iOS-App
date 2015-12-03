@@ -102,20 +102,25 @@ class LocationVisitsController: UITableViewController {
             }
         }
         flag.backgroundColor = UIColor.lightGrayColor()
-        
-        let delete = UITableViewRowAction(style: .Normal, title: "Delete") { [unowned self] _ in
-            let locationItem = self.locationItemForIndexPath(indexPath)
-            let sectionRemoved = self.appDelegate.removeLocationItem(locationItem)
-            self.locationMapController.loadPins()
-            if sectionRemoved {
-                tableView.deleteSections(NSIndexSet(index: indexPath.section), withRowAnimation: .Automatic)
-            } else {
-                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+
+        // If the first item in the list is a visit, we don't want the user to be able to  delete it (because
+        // it's currently ongoing and that'll create a data mess when we get the end visit notification)
+        if indexPath.section == 0 && indexPath.indexAtPosition(1) == 0 && locationItem.visit != nil {
+            return [flag]
+        } else {
+            let delete = UITableViewRowAction(style: .Normal, title: "Delete") { [unowned self] _ in
+                let locationItem = self.locationItemForIndexPath(indexPath)
+                let sectionRemoved = self.appDelegate.removeLocationItem(locationItem)
+                self.locationMapController.loadPins()
+                if sectionRemoved {
+                    tableView.deleteSections(NSIndexSet(index: indexPath.section), withRowAnimation: .Automatic)
+                } else {
+                    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+                }
             }
+            delete.backgroundColor = UIColor.redColor()
+            return [delete, flag]
         }
-        delete.backgroundColor = UIColor.redColor()
-        
-        return [delete, flag]
     }
 
 }
