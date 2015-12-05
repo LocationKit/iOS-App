@@ -40,14 +40,14 @@
 		D87DFD411C12A38F00F8E721 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D87DFD451C12A38F00F8E721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 		D89A1F771C1350E900CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F761C1350E900CEBF53 /* AppDelegate.swift */; };
-		D89A1F7B1C13666800CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* LocationItem.swift */; };
-		D89A1F7C1C13675800CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* LocationItem.swift */; };
-		D89A1F7D1C13675800CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* LocationItem.swift */; };
-		D89A1F7E1C13675900CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* LocationItem.swift */; };
+		D89A1F7B1C13666800CEBF53 /* BaseLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* BaseLocationItem.swift */; };
+		D89A1F7C1C13675800CEBF53 /* BaseLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* BaseLocationItem.swift */; };
+		D89A1F7D1C13675800CEBF53 /* BaseLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* BaseLocationItem.swift */; };
+		D89A1F7E1C13675900CEBF53 /* BaseLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* BaseLocationItem.swift */; };
 		D89A1F7F1C13675C00CEBF53 /* DayLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */; };
 		D89A1F801C13675D00CEBF53 /* DayLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */; };
 		D89A1F811C13675E00CEBF53 /* DayLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */; };
-		D89A1F831C13681C00CEBF53 /* LKLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F821C13681C00CEBF53 /* LKLocationItem.swift */; };
+		D89A1F831C13681C00CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F821C13681C00CEBF53 /* LocationItem.swift */; };
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
@@ -71,7 +71,7 @@
 		D83E8DAB1BFF674200477D2A /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayLocationInfo.swift; sourceTree = "<group>"; };
 		D84143361C00DE1A00AFCC67 /* LocationMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapController.swift; sourceTree = "<group>"; };
-		D841433A1C01110100AFCC67 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		D841433A1C01110100AFCC67 /* BaseLocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLocationItem.swift; sourceTree = "<group>"; };
 		D87CC4071C129607005666E4 /* AppleVisitsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleVisitsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87CC4081C129607005666E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/AppleVisits/Info.plist"; sourceTree = "<absolute>"; };
 		D87D528F1C12AA36000F345D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		D87DFD4B1C12A38F00F8E721 /* ParkourMethodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkourMethodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87DFD4C1C12A38F00F8E721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/ParkourMethod/Info.plist"; sourceTree = "<absolute>"; };
 		D89A1F761C1350E900CEBF53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D89A1F821C13681C00CEBF53 /* LKLocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLocationItem.swift; sourceTree = "<group>"; };
+		D89A1F821C13681C00CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		D8C6E71A1C131BB400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E71E1C131D5200F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E7281C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				D89A1F761C1350E900CEBF53 /* AppDelegate.swift */,
-				D89A1F821C13681C00CEBF53 /* LKLocationItem.swift */,
+				D89A1F821C13681C00CEBF53 /* LocationItem.swift */,
 				D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */,
 				D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */,
 				D8FC0A591BFF570D00AB660A /* Info.plist */,
@@ -220,7 +220,7 @@
 			children = (
 				D8FC0A4D1BFF570D00AB660A /* BaseAppDelegate.swift */,
 				D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */,
-				D841433A1C01110100AFCC67 /* LocationItem.swift */,
+				D841433A1C01110100AFCC67 /* BaseLocationItem.swift */,
 				D84143401C014BD700AFCC67 /* User Interface */,
 				D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */,
 			);
@@ -611,7 +611,7 @@
 			files = (
 				D87CC3F31C129607005666E4 /* LocationVisitCell.swift in Sources */,
 				D87CC3F61C129607005666E4 /* LocationVisitsController.swift in Sources */,
-				D89A1F7E1C13675900CEBF53 /* LocationItem.swift in Sources */,
+				D89A1F7E1C13675900CEBF53 /* BaseLocationItem.swift in Sources */,
 				D87CC3F91C129607005666E4 /* BaseAppDelegate.swift in Sources */,
 				D89A1F811C13675E00CEBF53 /* DayLocationInfo.swift in Sources */,
 				D87CC3FA1C129607005666E4 /* LocationMapController.swift in Sources */,
@@ -624,7 +624,7 @@
 			files = (
 				D87DFD1E1C12A35F00F8E721 /* LocationVisitCell.swift in Sources */,
 				D87DFD211C12A35F00F8E721 /* LocationVisitsController.swift in Sources */,
-				D89A1F7D1C13675800CEBF53 /* LocationItem.swift in Sources */,
+				D89A1F7D1C13675800CEBF53 /* BaseLocationItem.swift in Sources */,
 				D87DFD241C12A35F00F8E721 /* BaseAppDelegate.swift in Sources */,
 				D89A1F801C13675D00CEBF53 /* DayLocationInfo.swift in Sources */,
 				D87DFD251C12A35F00F8E721 /* LocationMapController.swift in Sources */,
@@ -637,7 +637,7 @@
 			files = (
 				D87DFD371C12A38F00F8E721 /* LocationVisitCell.swift in Sources */,
 				D87DFD3A1C12A38F00F8E721 /* LocationVisitsController.swift in Sources */,
-				D89A1F7C1C13675800CEBF53 /* LocationItem.swift in Sources */,
+				D89A1F7C1C13675800CEBF53 /* BaseLocationItem.swift in Sources */,
 				D87DFD3D1C12A38F00F8E721 /* BaseAppDelegate.swift in Sources */,
 				D89A1F7F1C13675C00CEBF53 /* DayLocationInfo.swift in Sources */,
 				D87DFD3E1C12A38F00F8E721 /* LocationMapController.swift in Sources */,
@@ -649,8 +649,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D83E8DA51BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */,
-				D89A1F831C13681C00CEBF53 /* LKLocationItem.swift in Sources */,
-				D89A1F7B1C13666800CEBF53 /* LocationItem.swift in Sources */,
+				D89A1F831C13681C00CEBF53 /* LocationItem.swift in Sources */,
+				D89A1F7B1C13666800CEBF53 /* BaseLocationItem.swift in Sources */,
 				D83E8D991BFF595700477D2A /* LocationVisitsController.swift in Sources */,
 				D841432B1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */,
 				D8FC0A4E1BFF570D00AB660A /* BaseAppDelegate.swift in Sources */,

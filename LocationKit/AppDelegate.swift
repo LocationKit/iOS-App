@@ -41,7 +41,7 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
     
     // MARK: LKLocationManagerDelegate
     func locationManager(manager: LKLocationManager, didStartVisit visit: LKVisit) {
-        let locationItem = LKLocationItem(visit: visit)
+        let locationItem = LocationItem(visit: visit)
         
         // Add this item
         addLocationItem(locationItem)
@@ -57,7 +57,7 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
     }
     
     func locationManager(manager: LKLocationManager, didEndVisit visit: LKVisit) {
-        let locationItem = LKLocationItem(visit: visit)
+        let locationItem = LocationItem(visit: visit)
         let dayInfo = DayLocationInfo(locationItem: locationItem)
         if let existingIndex = allLocationItems.indexOf(dayInfo) {
             let existingDayInfo = allLocationItems[existingIndex]
@@ -72,7 +72,7 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
             }
             
             if let exisitingVisitIndex = exisitingVisitIndex {
-                let locationItem = existingDayInfo.locationItems[exisitingVisitIndex] as! LKLocationItem
+                let locationItem = existingDayInfo.locationItems[exisitingVisitIndex] as! LocationItem
                 locationItem.visit = visit
                 saveLocationHistory()
                 NSNotificationCenter.defaultCenter().postNotificationName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil)
@@ -92,21 +92,21 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
     
     // CSV Header
     override var csvHeaderText: String {
-        return LKLocationItem.csvText
+        return LocationItem.csvText
     }
     
     override func addCurrentPlace(handler: (CLLocationCoordinate2D?, NSError?) -> Void) {
         locationManager.requestPlace() { [unowned self] place, error in
             if let place = place {
                 if let coordinate = place.location?.coordinate {
-                    let locationItem = LKLocationItem(place: place, date: NSDate(), coordinate: coordinate)
+                    let locationItem = LocationItem(place: place, date: NSDate(), coordinate: coordinate)
                     self.addLocationItem(locationItem)
                     handler(coordinate, nil)
                     
                 } else {
                     self.locationManager.requestLocation() { [unowned self] location, locationError in
                         if let location = location {
-                            let locationItem = LKLocationItem(place: place, date: NSDate(), coordinate: location.coordinate)
+                            let locationItem = LocationItem(place: place, date: NSDate(), coordinate: location.coordinate)
                             self.addLocationItem(locationItem)
                             handler(location.coordinate, nil)
                             

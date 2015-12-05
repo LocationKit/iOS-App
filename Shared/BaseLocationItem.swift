@@ -9,7 +9,6 @@
 import LocationKit
 import CoreLocation
 
-
 class BaseLocationItem: NSObject, NSCoding {
     var flagged: Bool = false
     

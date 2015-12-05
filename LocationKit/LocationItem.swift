@@ -9,7 +9,7 @@
 import Foundation
 import LocationKit
 
-class LKLocationItem: BaseLocationItem {
+class LocationItem: BaseLocationItem {
     
     static let csvText = "visit|place,arrival_day,arrival_time,departure_day,departure_time,latitude,longitude,flagged,venue_name,street_address,city,state,postal_code"
 
@@ -158,7 +158,7 @@ class LKLocationItem: BaseLocationItem {
         let departureText: String
         if let visit = visit {
             title = "visit"
-            departureText = "\(LKLocationItem.dayFormatter.stringFromDate(visit.departureDate)),\(LKLocationItem.timeFormatter.stringFromDate(visit.departureDate))"
+            departureText = "\(LocationItem.dayFormatter.stringFromDate(visit.departureDate)),\(LocationItem.timeFormatter.stringFromDate(visit.departureDate))"
         } else {
             title = "place"
             departureText = ","
@@ -204,7 +204,7 @@ class LKLocationItem: BaseLocationItem {
             postalCode = ""
         }
         
-        let csvText = "\(title),\(LKLocationItem.dayFormatter.stringFromDate(date)),\(LKLocationItem.timeFormatter.stringFromDate(date)),\(departureText),\(coordinate.latitude),\(coordinate.longitude),\(flagged ? "1" : ""), \(venueName),\(streetName),\(city),\(state),\(postalCode)"
+        let csvText = "\(title),\(LocationItem.dayFormatter.stringFromDate(date)),\(LocationItem.timeFormatter.stringFromDate(date)),\(departureText),\(coordinate.latitude),\(coordinate.longitude),\(flagged ? "1" : ""), \(venueName),\(streetName),\(city),\(state),\(postalCode)"
         return csvText
         
     }
