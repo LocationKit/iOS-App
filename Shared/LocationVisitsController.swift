@@ -8,14 +8,13 @@
 
 import UIKit
 import MapKit
-import LocationKit
 
 class LocationVisitsController: UITableViewController {
 
     private var visitHistoryObserver: AnyObject!
     
-    private var appDelegate: AppDelegate {
-        return UIApplication.sharedApplication().delegate as! AppDelegate
+    private var appDelegate: BaseAppDelegate {
+        return UIApplication.sharedApplication().delegate as! BaseAppDelegate
     }
     
     private var locationMapController: LocationMapController {
@@ -44,7 +43,7 @@ class LocationVisitsController: UITableViewController {
         NSNotificationCenter.defaultCenter().removeObserver(visitHistoryObserver)
     }
     
-    func locationItemForIndexPath(indexPath: NSIndexPath) -> LocationItem {
+    func locationItemForIndexPath(indexPath: NSIndexPath) -> BaseLocationItem {
         return appDelegate.allLocationItems[indexPath.section].locationItems[indexPath.row]
     }
     
@@ -106,7 +105,7 @@ class LocationVisitsController: UITableViewController {
         // If the first item in the list is a visit that has a start but no end, we don't want the user
         // to be able to delete it (because it's currently ongoing and that'll create a data mess when
         // we get the end visit notification)
-        if indexPath.section == 0 && indexPath.indexAtPosition(1) == 0 && locationItem.visit != nil && locationItem.visit!.departureDate == NSDate.distantFuture() {
+        if indexPath.section == 0 && indexPath.indexAtPosition(1) == 0 && locationItem.isVisit && locationItem.visitDepartureDate == NSDate.distantFuture() {
             return [flag]
         } else {
             let delete = UITableViewRowAction(style: .Normal, title: "Delete") { [unowned self] _ in

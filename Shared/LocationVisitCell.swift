@@ -7,24 +7,23 @@
 //
 
 import UIKit
-import LocationKit
 
 class LocationVisitCell: UITableViewCell {
     static let reuseIdentifier = "LocationVisitCell"
     private static let timeFormatter = NSDateFormatter()
     private static let unknownCategoryImage: UIImage? = UIImage(named: "Unknown")
 
-    @IBOutlet var categoryImageView: UIImageView!
-    @IBOutlet var placeLabel: UILabel!
-    @IBOutlet var categoryLabel: UILabel!
-    @IBOutlet var flaggedView: UIView!
+    @IBOutlet weak var categoryImageView: UIImageView!
+    @IBOutlet weak var placeLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var flaggedView: UIView!
 
-    @IBOutlet var visitView: UIView!
-    @IBOutlet var arrivalLabel: UILabel!
-    @IBOutlet var depatureLabel: UILabel!
+    @IBOutlet weak var visitView: UIView!
+    @IBOutlet weak var arrivalLabel: UILabel!
+    @IBOutlet weak var depatureLabel: UILabel!
     
-    @IBOutlet var placeView: UIView!
-    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet weak var placeView: UIView!
+    @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var detectionMethodLabel: UILabel!
 
@@ -33,12 +32,10 @@ class LocationVisitCell: UITableViewCell {
         timeFormatter.timeStyle = .ShortStyle
     }
     
-    func updateUI(locationItem: LocationItem) {
+    func updateUI(locationItem: BaseLocationItem) {
         // populate address info
-        let placemark = locationItem.place
-        
         var placeText: String = ""
-        if let venueName = placemark.venue?.name {
+        if let venueName = locationItem.venueName {
             var truncatedVenueName: String
             // Truncate venue name to 30 chars to prevent wrapping
             if venueName.characters.count > 27 {
@@ -49,28 +46,28 @@ class LocationVisitCell: UITableViewCell {
 
             placeText += truncatedVenueName + "\n"
         }
-        if let streetName = placemark.thoroughfare {
-            if let streetNumber = placemark.subThoroughfare {
+        if let streetName = locationItem.thoroughfare {
+            if let streetNumber = locationItem.subThoroughfare {
                 placeText += "\(streetNumber) \(streetName)\n"
             } else {
                 placeText += streetName + "\n"
             }
         }
-        if let city = placemark.locality, state = placemark.administrativeArea, postalCode = placemark.postalCode {
+        if let city = locationItem.locality, state = locationItem.administrativeArea, postalCode = locationItem.postalCode {
             placeText += "\(city), \(state)   \(postalCode)"
-        } else if let city = placemark.locality, postalCode = placemark.postalCode {
+        } else if let city = locationItem.locality, postalCode = locationItem.postalCode {
             placeText += "\(city)   \(postalCode)"
-        } else if let city = placemark.locality, state = placemark.administrativeArea {
+        } else if let city = locationItem.locality, state = locationItem.administrativeArea {
             placeText += "\(city), \(state)"
         }
         placeLabel.text = placeText
         
         // populate categories
         var categoryText = ""
-        if let categoryName = placemark.venue?.category {
+        if let categoryName = locationItem.venueCategory {
             categoryText = "Categories: \(categoryName)"
             
-            if let subcategoryName = placemark.venue?.subcategory where !subcategoryName.isEmpty {
+            if let subcategoryName = locationItem.venueSubcategory where !subcategoryName.isEmpty {
                 categoryText += " - \(subcategoryName)"
                 categoryImageView.image = UIImage(named: subcategoryName) ?? UIImage(named: categoryName) ?? LocationVisitCell.unknownCategoryImage
             } else {
@@ -82,14 +79,14 @@ class LocationVisitCell: UITableViewCell {
         categoryLabel.text = categoryText
         
         // populate time information
-        if let visit = locationItem.visit {
+        if locationItem.isVisit {
             visitView.hidden = false
             placeView.hidden = true
             
             // populate arrival and depature times
-            arrivalLabel.text = LocationVisitCell.timeFormatter.stringFromDate(visit.arrivalDate)
-            if visit.departureDate != NSDate.distantFuture() {
-                depatureLabel.text = LocationVisitCell.timeFormatter.stringFromDate(visit.departureDate)
+            arrivalLabel.text = LocationVisitCell.timeFormatter.stringFromDate(locationItem.visitArrivalDate)
+            if locationItem.visitDepartureDate != NSDate.distantFuture() {
+                depatureLabel.text = LocationVisitCell.timeFormatter.stringFromDate(locationItem.visitDepartureDate)
             } else {
                 depatureLabel.text = ""
             }
@@ -105,7 +102,7 @@ class LocationVisitCell: UITableViewCell {
         flaggedView.hidden = !locationItem.flagged
 
         // populate detection method label
-        if let source = placemark.locationKitEntranceSource {
+        if let source = locationItem.detectionMethod {
             detectionMethodLabel.text = "Detection Method: \(source)"
         } else {
             detectionMethodLabel.text = "Detection Method: Unknown"

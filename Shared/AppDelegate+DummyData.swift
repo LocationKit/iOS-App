@@ -10,7 +10,7 @@ import Foundation
 import LocationKit
 import AddressBookUI
 
-extension AppDelegate {
+extension BaseAppDelegate {
     
     func loadDummyData() {
         let addressDictionary1: [NSString:String] = [

@@ -28,20 +28,20 @@ class DayLocationInfo: NSObject, NSCoding {
     }
     
     let day: NSDate
-    private(set) var locationItems: [LocationItem]
+    private(set) var locationItems: [BaseLocationItem]
     let formattedDayText: String
     
-    convenience init(visit: LKVisit) {
-        let locationItem = LocationItem(visit: visit)
-        self.init(locationItem: locationItem)
-    }
+//    convenience init(visit: LKVisit) {
+//        let locationItem = LocationItem(visit: visit)
+//        self.init(locationItem: locationItem)
+//    }
+//    
+//    convenience init(place: LKPlacemark, coordinate: CLLocationCoordinate2D) {
+//        let locationItem = LocationItem(place: place, date: NSDate(), coordinate: coordinate)
+//        self.init(locationItem: locationItem)
+//    }
     
-    convenience init(place: LKPlacemark, coordinate: CLLocationCoordinate2D) {
-        let locationItem = LocationItem(place: place, date: NSDate(), coordinate: coordinate)
-        self.init(locationItem: locationItem)
-    }
-    
-    init(locationItem: LocationItem) {
+    init(locationItem: BaseLocationItem) {
         day = DayLocationInfo.beginningOfDay(locationItem.date)
         locationItems = [locationItem]
         formattedDayText = DayLocationInfo.formatter.stringFromDate(day)
@@ -62,14 +62,14 @@ class DayLocationInfo: NSObject, NSCoding {
         return day.hashValue
     }
     
-    func addLocationItem(locationItem: LocationItem) {
+    func addLocationItem(locationItem: BaseLocationItem) {
         var newItems = locationItems
         newItems.append(locationItem)
         newItems.sortInPlace() { $0.date.compare($1.date) == .OrderedDescending }
         locationItems = newItems
     }
     
-    func removeLocationItem(locationItem: LocationItem) {
+    func removeLocationItem(locationItem: BaseLocationItem) {
         var exisitingIndex: Int?
         for (someIndex, someLocationItem) in locationItems.enumerate() {
             if someLocationItem.date == locationItem.date &&
@@ -87,12 +87,15 @@ class DayLocationInfo: NSObject, NSCoding {
     
     @objc func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(day, forKey: "day")
-        aCoder.encodeObject(locationItems, forKey: "locationItems")
+        
+//        if let stuff = locationItems as? [AnyObject] {
+            aCoder.encodeObject(locationItems, forKey: "locationItems")
+//        }
     }
     
     @objc required init?(coder aDecoder: NSCoder) {
         day = aDecoder.decodeObjectForKey("day") as! NSDate
-        locationItems = aDecoder.decodeObjectForKey("locationItems") as! [LocationItem]
+        locationItems = aDecoder.decodeObjectForKey("locationItems") as! [BaseLocationItem]
         formattedDayText = DayLocationInfo.formatter.stringFromDate(day)
     }
     
