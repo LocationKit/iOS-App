@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C48a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K5D-Ft-Ud7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K5D-Ft-Ud7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -10,29 +10,29 @@
         <!--Location Visits Controller-->
         <scene sceneID="mRL-oB-RfX">
             <objects>
-                <tableViewController id="jD9-ap-0HH" customClass="LocationVisitsController" customModule="LocationKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jD9-ap-0HH" customClass="LocationVisitsController" customModule="AppleVisitsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="104" sectionHeaderHeight="18" sectionFooterHeight="18" id="Wq4-pg-XbJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="336"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationVisitCell" id="2IS-LJ-jzU" customClass="LocationVisitCell" customModule="LocationKitApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="600" height="104"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationVisitCell" id="2IS-LJ-jzU" customClass="LocationVisitCell" customModule="AppleVisitsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49.5" width="600" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2IS-LJ-jzU" id="Qfv-nI-Udl">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="103"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="103.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0q-ib-byx">
-                                            <rect key="frame" x="0.0" y="0.0" width="14" height="88"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0q-ib-byx">
+                                            <rect key="frame" x="0.0" y="0.0" width="14" height="104"/>
                                             <animations/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="14" id="ZH3-b5-tSi"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-ZO-rcy">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-ZO-rcy">
                                             <rect key="frame" x="16" y="16" width="54" height="54"/>
                                             <animations/>
                                             <constraints>
@@ -53,17 +53,17 @@ Washington DC 22001</string>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Categories: Drinks: Cafe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wm0-c0-03Z">
-                                            <rect key="frame" x="82" y="64" width="506" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories: Drinks: Cafe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wm0-c0-03Z">
+                                            <rect key="frame" x="82" y="63" width="506" height="21"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="EWK-WQ-aIm"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIn-nr-8nL" userLabel="Place Times">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIn-nr-8nL" userLabel="Place Times">
                                             <rect key="frame" x="488" y="12" width="100" height="64"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.33 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1QO-X9-rvs">
@@ -97,7 +97,7 @@ Washington DC 22001</string>
                                                 <constraint firstAttribute="trailing" secondItem="ZLJ-V7-0zr" secondAttribute="trailing" id="sFR-Gx-jfp"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-dC-WqG" userLabel="Visit Times">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-dC-WqG" userLabel="Visit Times">
                                             <rect key="frame" x="488" y="12" width="100" height="64"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:11 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IE2-NV-6IX">
@@ -154,11 +154,11 @@ Washington DC 22001</string>
                                                 <constraint firstAttribute="bottom" secondItem="IE2-NV-6IX" secondAttribute="bottom" constant="10" id="wzO-oL-4zw"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detection Method: Doorway Intersection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEH-q3-s6o">
-                                            <rect key="frame" x="82" y="80" width="310" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detection Method: Doorway Intersection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEH-q3-s6o">
+                                            <rect key="frame" x="82" y="80" width="506" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -167,6 +167,7 @@ Washington DC 22001</string>
                                         <constraint firstItem="YIn-nr-8nL" firstAttribute="centerY" secondItem="Qfv-nI-Udl" secondAttribute="centerY" id="12y-ib-i71"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Wm0-c0-03Z" secondAttribute="trailing" constant="4" id="1dc-Ln-fog"/>
                                         <constraint firstItem="HLe-pb-s32" firstAttribute="leading" secondItem="jCO-ZO-rcy" secondAttribute="trailing" constant="12" id="50G-jl-Muj"/>
+                                        <constraint firstItem="0zb-dC-WqG" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="top" constant="12" id="7o4-lB-R6L"/>
                                         <constraint firstItem="p0q-ib-byx" firstAttribute="leading" secondItem="Qfv-nI-Udl" secondAttribute="leading" id="C86-3T-28R"/>
                                         <constraint firstAttribute="trailing" secondItem="0zb-dC-WqG" secondAttribute="trailing" constant="12" id="EKr-G1-cCY"/>
                                         <constraint firstItem="DEH-q3-s6o" firstAttribute="top" secondItem="HLe-pb-s32" secondAttribute="bottom" constant="10" id="Ghn-Cf-xAb"/>
@@ -176,13 +177,23 @@ Washington DC 22001</string>
                                         <constraint firstItem="jCO-ZO-rcy" firstAttribute="centerY" secondItem="Qfv-nI-Udl" secondAttribute="centerY" id="Nr0-FE-kqt"/>
                                         <constraint firstAttribute="trailing" secondItem="YIn-nr-8nL" secondAttribute="trailing" constant="12" id="PyO-re-MKL"/>
                                         <constraint firstItem="Wm0-c0-03Z" firstAttribute="leading" secondItem="jCO-ZO-rcy" secondAttribute="trailing" constant="12" id="ROd-Qa-Xv4"/>
+                                        <constraint firstItem="jCO-ZO-rcy" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="top" constant="16" id="Tx5-WQ-Lx6"/>
                                         <constraint firstItem="0zb-dC-WqG" firstAttribute="centerY" secondItem="Qfv-nI-Udl" secondAttribute="centerY" id="VpW-Ra-mlO"/>
                                         <constraint firstItem="DEH-q3-s6o" firstAttribute="leading" secondItem="Wm0-c0-03Z" secondAttribute="leading" id="clo-dx-cNc"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="DEH-q3-s6o" secondAttribute="bottom" constant="-6" id="gGP-dk-o3q"/>
                                         <constraint firstItem="jCO-ZO-rcy" firstAttribute="leading" secondItem="Qfv-nI-Udl" secondAttribute="leading" constant="16" id="hK4-bZ-b4c"/>
+                                        <constraint firstAttribute="trailing" secondItem="DEH-q3-s6o" secondAttribute="trailing" constant="12" id="mYo-Eh-FRo"/>
                                         <constraint firstItem="0zb-dC-WqG" firstAttribute="leading" secondItem="HLe-pb-s32" secondAttribute="trailing" id="qk4-DI-1v0"/>
+                                        <constraint firstItem="YIn-nr-8nL" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="top" constant="12" id="sTr-7h-WPS"/>
                                         <constraint firstAttribute="bottom" secondItem="p0q-ib-byx" secondAttribute="bottom" id="zYs-Fp-eO2"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Nr0-FE-kqt"/>
+                                            <exclude reference="VpW-Ra-mlO"/>
+                                            <exclude reference="12y-ib-i71"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
@@ -212,7 +223,7 @@ Washington DC 22001</string>
         <!--LocationKit-->
         <scene sceneID="0V6-66-zW5">
             <objects>
-                <viewController id="1cL-6A-U7V" customClass="LocationMapController" customModule="LocationKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1cL-6A-U7V" customClass="LocationMapController" customModule="AppleVisitsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kNv-sO-1Wj"/>
                         <viewControllerLayoutGuide type="bottom" id="hL7-3O-1HE"/>
@@ -275,6 +286,7 @@ Washington DC 22001</string>
                     <connections>
                         <outlet property="actionButton" destination="Ur4-zY-ggw" id="Jeb-Zm-0AO"/>
                         <outlet property="mapView" destination="phB-5f-5Zd" id="I7G-Gg-LPs"/>
+                        <outlet property="titleItem" destination="cIW-xx-R79" id="7Td-AB-QHq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7J-hS-41d" userLabel="First Responder" sceneMemberID="firstResponder"/>

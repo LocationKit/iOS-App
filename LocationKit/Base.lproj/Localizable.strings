@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  LocationKitApp
+
+  Created by Michael Sanford on 12/5/15.
+  Copyright © 2015 SocialRadar. All rights reserved.
+*/
+
+"AppTitle" = "Location Kit";

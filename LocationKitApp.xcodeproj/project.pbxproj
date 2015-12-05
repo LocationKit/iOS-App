@@ -43,11 +43,11 @@
 		D87CC3FC1C129607005666E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
 		D87CC3FD1C129607005666E4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D87CC4011C129607005666E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
-		D87D52901C12AA36000F345D /* LaunchScreen-AppleVisits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87D528F1C12AA36000F345D /* LaunchScreen-AppleVisits.storyboard */; };
-		D87D52971C12AF48000F345D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets.xcassets */; };
-		D87D52981C12AF59000F345D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets.xcassets */; };
-		D87D52991C12AF5A000F345D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets.xcassets */; };
-		D87D529A1C12AF5B000F345D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets.xcassets */; };
+		D87D52901C12AA36000F345D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87D528F1C12AA36000F345D /* LaunchScreen.storyboard */; };
+		D87D52971C12AF48000F345D /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
+		D87D52981C12AF59000F345D /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
+		D87D52991C12AF5A000F345D /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
+		D87D529A1C12AF5B000F345D /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
 		D87DFD1E1C12A35F00F8E721 /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
 		D87DFD1F1C12A35F00F8E721 /* AppDelegate+DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143321C00D68900AFCC67 /* AppDelegate+DummyData.swift */; };
 		D87DFD201C12A35F00F8E721 /* AppDelegate+VisitHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432E1C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift */; };
@@ -70,18 +70,21 @@
 		D87DFD401C12A38F00F8E721 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
 		D87DFD411C12A38F00F8E721 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D87DFD451C12A38F00F8E721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
-		D8F3DFD21C130F8000EA0F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets.xcassets */; };
-		D8F3DFD31C130F8100EA0F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets.xcassets */; };
-		D8F3DFDA1C13113900EA0F16 /* LaunchScreen-ParkourMethod.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFD71C13112600EA0F16 /* LaunchScreen-ParkourMethod.storyboard */; };
-		D8F3DFDB1C13114200EA0F16 /* LaunchScreen-Sense360.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFD41C13110200EA0F16 /* LaunchScreen-Sense360.storyboard */; };
+		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
+		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
+		D8C6E7261C1320EE00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7241C1320EE00F0C209 /* Localizable.strings */; };
+		D8C6E72B1C13217F00F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
+		D8C6E7331C1322AB00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7291C13217F00F0C209 /* Localizable.strings */; };
+		D8C6E7341C1322B300F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E72D1C1321B400F0C209 /* Localizable.strings */; };
+		D8C6E7351C1322BC00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7301C1321C600F0C209 /* Localizable.strings */; };
+		D8F3DFD21C130F8000EA0F16 /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
+		D8F3DFD31C130F8100EA0F16 /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
 		D8F3DFDD1C13129D00EA0F16 /* Assets-AppleVisits.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */; };
 		D8F3DFDF1C1313F300EA0F16 /* Assets-Sense360.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */; };
 		D8F3DFE11C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */; };
+		D8F3DFE41C13178200EA0F16 /* Assets-LocationKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */; };
 		D8FC0A4E1BFF570D00AB660A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A4D1BFF570D00AB660A /* AppDelegate.swift */; };
 		D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
-		D8FC0A581BFF570D00AB660A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A561BFF570D00AB660A /* LaunchScreen.storyboard */; };
-		D8FC0A631BFF570D00AB660A /* LocationKitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A621BFF570D00AB660A /* LocationKitAppTests.swift */; };
-		D8FC0A6E1BFF570D00AB660A /* LocationKitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A6D1BFF570D00AB660A /* LocationKitAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +111,6 @@
 		D83E8D981BFF595700477D2A /* LocationVisitsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVisitsController.swift; sourceTree = "<group>"; };
 		D83E8D9A1BFF597100477D2A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D83E8D9C1BFF59BD00477D2A /* LocationKitApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationKitApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		D83E8D9D1BFF59BD00477D2A /* LocationKitAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationKitAppTests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		D83E8D9E1BFF59BD00477D2A /* LocationKitAppUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationKitAppUITests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVisitCell.swift; sourceTree = "<group>"; };
 		D83E8DA91BFF673B00477D2A /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		D83E8DAB1BFF674200477D2A /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
@@ -119,29 +120,30 @@
 		D84143361C00DE1A00AFCC67 /* LocationMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapController.swift; sourceTree = "<group>"; };
 		D841433A1C01110100AFCC67 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		D87CC4071C129607005666E4 /* AppleVisitsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleVisitsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87CC4081C129607005666E4 /* AppleVisits-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AppleVisits-Info.plist"; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/AppleVisits-Info.plist"; sourceTree = "<absolute>"; };
-		D87D528F1C12AA36000F345D /* LaunchScreen-AppleVisits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "LaunchScreen-AppleVisits.storyboard"; path = "LocationKitApp/Base.lproj/LaunchScreen-AppleVisits.storyboard"; sourceTree = "<group>"; };
+		D87CC4081C129607005666E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/AppleVisits/Info.plist"; sourceTree = "<absolute>"; };
+		D87D528F1C12AA36000F345D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D87DFD321C12A35F00F8E721 /* Sense360App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sense360App.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87DFD331C12A35F00F8E721 /* Sense360-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sense360-Info.plist"; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/Sense360-Info.plist"; sourceTree = "<absolute>"; };
+		D87DFD331C12A35F00F8E721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/Sense360/Info.plist"; sourceTree = "<absolute>"; };
 		D87DFD4B1C12A38F00F8E721 /* ParkourMethodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkourMethodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87DFD4C1C12A38F00F8E721 /* ParkourMethod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ParkourMethod-Info.plist"; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/ParkourMethod-Info.plist"; sourceTree = "<absolute>"; };
-		D8F3DFD51C13110200EA0F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "LocationKitApp/Base.lproj/LaunchScreen-Sense360.storyboard"; sourceTree = "<group>"; };
-		D8F3DFD81C13112600EA0F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "LocationKitApp/Base.lproj/LaunchScreen-ParkourMethod.storyboard"; sourceTree = "<group>"; };
-		D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets-AppleVisits.xcassets"; path = "LocationKitApp/Assets-AppleVisits.xcassets"; sourceTree = "<group>"; };
-		D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets-Sense360.xcassets"; path = "LocationKitApp/Assets-Sense360.xcassets"; sourceTree = "<group>"; };
-		D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets-ParkourMethod.xcassets"; path = "LocationKitApp/Assets-ParkourMethod.xcassets"; sourceTree = "<group>"; };
+		D87DFD4C1C12A38F00F8E721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/ParkourMethod/Info.plist"; sourceTree = "<absolute>"; };
+		D8C6E71A1C131BB400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C6E71E1C131D5200F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C6E7251C1320EE00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8C6E7281C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C6E72A1C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8C6E72E1C1321B400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8C6E7311C1321C600F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-AppleVisits.xcassets"; sourceTree = "<group>"; };
+		D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-Sense360.xcassets"; sourceTree = "<group>"; };
+		D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-ParkourMethod.xcassets"; sourceTree = "<group>"; };
+		D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-LocationKit.xcassets"; sourceTree = "<group>"; };
 		D8FC0A4A1BFF570D00AB660A /* LocationKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FC0A4D1BFF570D00AB660A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FC0A521BFF570D00AB660A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8FC0A541BFF570D00AB660A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D8FC0A571BFF570D00AB660A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-Shared.xcassets"; sourceTree = "<group>"; };
 		D8FC0A591BFF570D00AB660A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FC0A5E1BFF570D00AB660A /* LocationKitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationKitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8FC0A621BFF570D00AB660A /* LocationKitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationKitAppTests.swift; sourceTree = "<group>"; };
-		D8FC0A641BFF570D00AB660A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FC0A691BFF570D00AB660A /* LocationKitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationKitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8FC0A6D1BFF570D00AB660A /* LocationKitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationKitAppUITests.swift; sourceTree = "<group>"; };
-		D8FC0A6F1BFF570D00AB660A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,41 +228,56 @@
 			isa = PBXGroup;
 			children = (
 				D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */,
-				D87D528F1C12AA36000F345D /* LaunchScreen-AppleVisits.storyboard */,
-				D87CC4081C129607005666E4 /* AppleVisits-Info.plist */,
+				D87D528F1C12AA36000F345D /* LaunchScreen.storyboard */,
+				D87CC4081C129607005666E4 /* Info.plist */,
+				D8C6E72D1C1321B400F0C209 /* Localizable.strings */,
 			);
-			name = AppleVisits;
+			path = AppleVisits;
 			sourceTree = "<group>";
 		};
 		D8F3DFD01C130F1600EA0F16 /* Sense360 */ = {
 			isa = PBXGroup;
 			children = (
 				D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */,
-				D8F3DFD41C13110200EA0F16 /* LaunchScreen-Sense360.storyboard */,
-				D87DFD331C12A35F00F8E721 /* Sense360-Info.plist */,
+				D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */,
+				D87DFD331C12A35F00F8E721 /* Info.plist */,
+				D8C6E7301C1321C600F0C209 /* Localizable.strings */,
 			);
-			name = Sense360;
+			path = Sense360;
 			sourceTree = "<group>";
 		};
 		D8F3DFD11C130F2500EA0F16 /* Parkour Method */ = {
 			isa = PBXGroup;
 			children = (
 				D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */,
-				D8F3DFD71C13112600EA0F16 /* LaunchScreen-ParkourMethod.storyboard */,
-				D87DFD4C1C12A38F00F8E721 /* ParkourMethod-Info.plist */,
+				D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */,
+				D87DFD4C1C12A38F00F8E721 /* Info.plist */,
+				D8C6E7241C1320EE00F0C209 /* Localizable.strings */,
 			);
 			name = "Parkour Method";
+			path = ParkourMethod;
+			sourceTree = "<group>";
+		};
+		D8F3DFE21C13171100EA0F16 /* LocationKit */ = {
+			isa = PBXGroup;
+			children = (
+				D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */,
+				D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */,
+				D8FC0A591BFF570D00AB660A /* Info.plist */,
+				D8C6E7291C13217F00F0C209 /* Localizable.strings */,
+				D83E8D9C1BFF59BD00477D2A /* LocationKitApp-Bridging-Header.h */,
+			);
+			path = LocationKit;
 			sourceTree = "<group>";
 		};
 		D8FC0A411BFF570D00AB660A = {
 			isa = PBXGroup;
 			children = (
-				D8FC0A4C1BFF570D00AB660A /* LocationKitApp */,
+				D8FC0A4C1BFF570D00AB660A /* Shared */,
+				D8F3DFE21C13171100EA0F16 /* LocationKit */,
 				D8F3DFCF1C130EFB00EA0F16 /* AppleVisits */,
 				D8F3DFD01C130F1600EA0F16 /* Sense360 */,
 				D8F3DFD11C130F2500EA0F16 /* Parkour Method */,
-				D8FC0A611BFF570D00AB660A /* LocationKitAppTests */,
-				D8FC0A6C1BFF570D00AB660A /* LocationKitAppUITests */,
 				D8FC0A4B1BFF570D00AB660A /* Products */,
 				FDB88C2F0D68BB577A24CC11 /* Pods */,
 				DD2FB4F7ED4B7F711A18F6E6 /* Frameworks */,
@@ -280,7 +297,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8FC0A4C1BFF570D00AB660A /* LocationKitApp */ = {
+		D8FC0A4C1BFF570D00AB660A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				D8FC0A4D1BFF570D00AB660A /* AppDelegate.swift */,
@@ -288,32 +305,9 @@
 				D84143321C00D68900AFCC67 /* AppDelegate+DummyData.swift */,
 				D84143401C014BD700AFCC67 /* User Interface */,
 				D841433F1C014BC500AFCC67 /* Model */,
-				D8FC0A541BFF570D00AB660A /* Assets.xcassets */,
-				D8FC0A561BFF570D00AB660A /* LaunchScreen.storyboard */,
-				D8FC0A591BFF570D00AB660A /* Info.plist */,
-				D83E8D9C1BFF59BD00477D2A /* LocationKitApp-Bridging-Header.h */,
+				D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */,
 			);
-			path = LocationKitApp;
-			sourceTree = "<group>";
-		};
-		D8FC0A611BFF570D00AB660A /* LocationKitAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				D8FC0A621BFF570D00AB660A /* LocationKitAppTests.swift */,
-				D8FC0A641BFF570D00AB660A /* Info.plist */,
-				D83E8D9D1BFF59BD00477D2A /* LocationKitAppTests-Bridging-Header.h */,
-			);
-			path = LocationKitAppTests;
-			sourceTree = "<group>";
-		};
-		D8FC0A6C1BFF570D00AB660A /* LocationKitAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D8FC0A6D1BFF570D00AB660A /* LocationKitAppUITests.swift */,
-				D8FC0A6F1BFF570D00AB660A /* Info.plist */,
-				D83E8D9E1BFF59BD00477D2A /* LocationKitAppUITests-Bridging-Header.h */,
-			);
-			path = LocationKitAppUITests;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		DD2FB4F7ED4B7F711A18F6E6 /* Frameworks */ = {
@@ -514,8 +508,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87D52901C12AA36000F345D /* LaunchScreen-AppleVisits.storyboard in Resources */,
-				D87D52991C12AF5A000F345D /* Assets.xcassets in Resources */,
+				D8C6E7341C1322B300F0C209 /* Localizable.strings in Resources */,
+				D87D52901C12AA36000F345D /* LaunchScreen.storyboard in Resources */,
+				D87D52991C12AF5A000F345D /* Assets-Shared.xcassets in Resources */,
 				D87CC4011C129607005666E4 /* Main.storyboard in Resources */,
 				D8F3DFDD1C13129D00EA0F16 /* Assets-AppleVisits.xcassets in Resources */,
 			);
@@ -525,8 +520,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F3DFDB1C13114200EA0F16 /* LaunchScreen-Sense360.storyboard in Resources */,
-				D87D52971C12AF48000F345D /* Assets.xcassets in Resources */,
+				D8C6E7351C1322BC00F0C209 /* Localizable.strings in Resources */,
+				D87D52971C12AF48000F345D /* Assets-Shared.xcassets in Resources */,
+				D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */,
 				D87DFD2C1C12A35F00F8E721 /* Main.storyboard in Resources */,
 				D8F3DFDF1C1313F300EA0F16 /* Assets-Sense360.xcassets in Resources */,
 			);
@@ -536,8 +532,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F3DFDA1C13113900EA0F16 /* LaunchScreen-ParkourMethod.storyboard in Resources */,
-				D87D52981C12AF59000F345D /* Assets.xcassets in Resources */,
+				D8C6E7261C1320EE00F0C209 /* Localizable.strings in Resources */,
+				D87D52981C12AF59000F345D /* Assets-Shared.xcassets in Resources */,
+				D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */,
+				D8C6E72B1C13217F00F0C209 /* LaunchScreen.storyboard in Resources */,
 				D8F3DFE11C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets in Resources */,
 				D87DFD451C12A38F00F8E721 /* Main.storyboard in Resources */,
 			);
@@ -547,8 +545,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8FC0A581BFF570D00AB660A /* LaunchScreen.storyboard in Resources */,
-				D87D529A1C12AF5B000F345D /* Assets.xcassets in Resources */,
+				D8F3DFE41C13178200EA0F16 /* Assets-LocationKit.xcassets in Resources */,
+				D8C6E7331C1322AB00F0C209 /* Localizable.strings in Resources */,
+				D87D529A1C12AF5B000F345D /* Assets-Shared.xcassets in Resources */,
 				D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +556,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F3DFD31C130F8100EA0F16 /* Assets.xcassets in Resources */,
+				D8F3DFD31C130F8100EA0F16 /* Assets-Shared.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +564,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F3DFD21C130F8000EA0F16 /* Assets.xcassets in Resources */,
+				D8F3DFD21C130F8000EA0F16 /* Assets-Shared.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,7 +820,6 @@
 			files = (
 				D83E8DA61BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */,
 				D84143301C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift in Sources */,
-				D8FC0A631BFF570D00AB660A /* LocationKitAppTests.swift in Sources */,
 				D841432C1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */,
 				D84143381C00DE1A00AFCC67 /* LocationMapController.swift in Sources */,
 				D841433C1C01110100AFCC67 /* LocationItem.swift in Sources */,
@@ -835,7 +833,6 @@
 			files = (
 				D83E8DA71BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */,
 				D84143311C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift in Sources */,
-				D8FC0A6E1BFF570D00AB660A /* LocationKitAppUITests.swift in Sources */,
 				D841432D1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */,
 				D84143391C00DE1A00AFCC67 /* LocationMapController.swift in Sources */,
 				D841433D1C01110100AFCC67 /* LocationItem.swift in Sources */,
@@ -859,20 +856,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8F3DFD41C13110200EA0F16 /* LaunchScreen-Sense360.storyboard */ = {
+		D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8F3DFD51C13110200EA0F16 /* Base */,
+				D8C6E71A1C131BB400F0C209 /* Base */,
 			);
-			name = "LaunchScreen-Sense360.storyboard";
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		D8F3DFD71C13112600EA0F16 /* LaunchScreen-ParkourMethod.storyboard */ = {
+		D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8F3DFD81C13112600EA0F16 /* Base */,
+				D8C6E71E1C131D5200F0C209 /* Base */,
 			);
-			name = "LaunchScreen-ParkourMethod.storyboard";
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D8C6E7241C1320EE00F0C209 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C6E7251C1320EE00F0C209 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C6E7281C13217F00F0C209 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D8C6E7291C13217F00F0C209 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C6E72A1C13217F00F0C209 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D8C6E72D1C1321B400F0C209 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C6E72E1C1321B400F0C209 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D8C6E7301C1321C600F0C209 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C6E7311C1321C600F0C209 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		D8FC0A511BFF570D00AB660A /* Main.storyboard */ = {
@@ -881,14 +918,6 @@
 				D8FC0A521BFF570D00AB660A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D8FC0A561BFF570D00AB660A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8FC0A571BFF570D00AB660A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -903,7 +932,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "AppleVisits-Info.plist";
+				INFOPLIST_FILE = AppleVisits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
@@ -923,7 +952,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "AppleVisits-Info.plist";
+				INFOPLIST_FILE = AppleVisits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
@@ -942,7 +971,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "Sense360-Info.plist";
+				INFOPLIST_FILE = Sense360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
@@ -962,7 +991,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "Sense360-Info.plist";
+				INFOPLIST_FILE = Sense360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
@@ -981,7 +1010,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "ParkourMethod-Info.plist";
+				INFOPLIST_FILE = ParkourMethod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
@@ -1001,7 +1030,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "ParkourMethod-Info.plist";
+				INFOPLIST_FILE = ParkourMethod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
@@ -1103,7 +1132,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = LocationKitApp/Info.plist;
+				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitApp;
@@ -1123,7 +1152,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = LocationKitApp/Info.plist;
+				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitApp;

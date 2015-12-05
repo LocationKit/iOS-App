@@ -16,6 +16,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     
     @IBOutlet var mapView: MKMapView!
     @IBOutlet var actionButton: UIBarButtonItem!
+    @IBOutlet var titleItem: UINavigationItem!
     
     private var locationPins: [MKPointAnnotation] = []
     private var locationHistoryObserver: AnyObject!
@@ -33,6 +34,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        titleItem.title = NSLocalizedString("AppTitle", comment: "")
         
         if let recentDayVisitInfo = appDelegate.allLocationItems.first, locationItem = recentDayVisitInfo.locationItems.first {
             showMap(locationItem.coordinate, animated: false)
@@ -156,7 +158,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         }
         alertController.addAction(notificationsAction)
 
-        let howItWorksAction = UIAlertAction(title: "How does LocationKit work?", style: .Default) { [weak self] _ in
+        let howItWorksAction = UIAlertAction(title: "How does LocationKit work?", style: .Default) { _ in
             UIApplication.sharedApplication().openURL(NSURL(string: "https://locationkit.io/features/")!)
         }
         alertController.addAction(howItWorksAction)
