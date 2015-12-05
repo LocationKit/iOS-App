@@ -35,7 +35,7 @@
                             </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.37254901960784315" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Yku-qG-be9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eAd-j8-4D5"/>
                             <constraint firstItem="XHb-ic-YLt" firstAttribute="top" secondItem="Yku-qG-be9" secondAttribute="bottom" constant="24" id="gie-DI-okO"/>

@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ThemeColor</key>
+	<dict>
+		<key>red</key>
+		<integer>253</integer>
+		<key>green</key>
+		<integer>95</integer>
+		<key>blue</key>
+		<integer>19</integer>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

@@ -35,6 +35,13 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         super.viewDidLoad()
         mapView.delegate = self
         titleItem.title = NSLocalizedString("AppTitle", comment: "")
+        if let navigationController = navigationController,
+            colorInfo = NSBundle.mainBundle().infoDictionary?["ThemeColor"] as? NSDictionary,
+            red = colorInfo["red"] as? NSNumber, green = colorInfo["green"] as? NSNumber, blue = colorInfo["blue"] as? NSNumber {
+                
+            let backgroundColor = UIColor(red: CGFloat(red.doubleValue / 255.0), green: CGFloat(green.doubleValue / 255.0), blue: CGFloat(blue.doubleValue / 255.0), alpha: 1.0)
+            navigationController.navigationBar.backgroundColor = backgroundColor
+        }
         
         if let recentDayVisitInfo = appDelegate.allLocationItems.first, locationItem = recentDayVisitInfo.locationItems.first {
             showMap(locationItem.coordinate, animated: false)
