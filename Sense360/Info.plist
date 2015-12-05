@@ -6,15 +6,8 @@
 	<false/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackTranslucent</string>
-	<key>ThemeColor</key>
-	<dict>
-		<key>red</key>
-		<integer>28</integer>
-		<key>green</key>
-		<integer>142</integer>
-		<key>blue</key>
-		<integer>201</integer>
-	</dict>
+	<key>LocationSDK</key>
+	<string>Sense360</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

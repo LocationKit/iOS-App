@@ -9,6 +9,10 @@
 import UIKit
 import LocationKit
 
+enum LocationSDKType {
+    case LocationKit, AppleVisits, Sense360, ParkourMethod
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate {
 
@@ -19,7 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
     
     // Advanced Location Manager
     private(set) var locationManager: LKLocationManager!
-
+    
+    // SDK Type
+    private(set) var sdkType: LocationSDKType = .LocationKit
+    
     // MARK: Settings
     private let trackingKey = "com.socialradar.LocationKitApp.trackingEnabled"
     var trackingEnabled: Bool {
@@ -74,6 +81,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        switch NSBundle.mainBundle().infoDictionary?["LocationSDK"] as! String {
+            case "LocationKit": sdkType = .LocationKit
+            case "AppleVisits": sdkType = .AppleVisits
+            case "Sense360": sdkType = .Sense360
+            case "ParkourMethod": sdkType = .ParkourMethod
+        default:
+            print("undefined Location SDK. Aborting")
+            exit(-1)
+        }
+                
         // Override point for customization after application launch.
         NSUserDefaults.standardUserDefaults().registerDefaults([trackingKey: true])
         NSUserDefaults.standardUserDefaults().registerDefaults([notificationsKey: true])

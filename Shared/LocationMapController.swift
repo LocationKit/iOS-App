@@ -31,16 +31,31 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         NSNotificationCenter.defaultCenter().removeObserver(locationHistoryObserver)
     }
     
+    private var appTitle: String {
+        switch appDelegate.sdkType {
+        case .LocationKit: return "Location Kit"
+        case .AppleVisits: return "Apple Visits"
+        case .Sense360: return "Sense 360"
+        case .ParkourMethod: return "ParkourMethod"
+        }
+    }
+    
+    private var appColor: UIColor {
+        switch appDelegate.sdkType {
+        case .LocationKit: return UIColor(red: 253.0/255.0, green: 95.0/255.0, blue: 19.0/255.0, alpha: 1.0)
+        case .AppleVisits: return UIColor(red: 156.0/255.0, green: 156.0/255.0, blue: 156.0/255.0, alpha: 1.0)
+        case .Sense360: return UIColor(red: 28.0/255.0, green: 142.0/255.0, blue: 201.0/255.0, alpha: 1.0)
+        case .ParkourMethod: return UIColor(red: 214.0/255.0, green: 11.0/255.0, blue: 28.0/255.0, alpha: 1.0)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
-        titleItem.title = NSLocalizedString("AppTitle", comment: "")
-        if let navigationController = navigationController,
-            colorInfo = NSBundle.mainBundle().infoDictionary?["ThemeColor"] as? NSDictionary,
-            red = colorInfo["red"] as? NSNumber, green = colorInfo["green"] as? NSNumber, blue = colorInfo["blue"] as? NSNumber {
-                
-            let backgroundColor = UIColor(red: CGFloat(red.doubleValue / 255.0), green: CGFloat(green.doubleValue / 255.0), blue: CGFloat(blue.doubleValue / 255.0), alpha: 1.0)
-            navigationController.navigationBar.barTintColor = backgroundColor
+        
+        titleItem.title = appTitle
+        if let navigationController = navigationController {
+            navigationController.navigationBar.barTintColor = appColor
         }
         
         if let recentDayVisitInfo = appDelegate.allLocationItems.first, locationItem = recentDayVisitInfo.locationItems.first {

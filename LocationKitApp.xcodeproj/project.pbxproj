@@ -56,10 +56,6 @@
 		D87DFD451C12A38F00F8E721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
-		D8C6E7261C1320EE00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7241C1320EE00F0C209 /* Localizable.strings */; };
-		D8C6E7331C1322AB00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7291C13217F00F0C209 /* Localizable.strings */; };
-		D8C6E7341C1322B300F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E72D1C1321B400F0C209 /* Localizable.strings */; };
-		D8C6E7351C1322BC00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7301C1321C600F0C209 /* Localizable.strings */; };
 		D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
 		D8F3DFDD1C13129D00EA0F16 /* Assets-AppleVisits.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */; };
 		D8F3DFDF1C1313F300EA0F16 /* Assets-Sense360.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */; };
@@ -93,11 +89,7 @@
 		D87DFD4C1C12A38F00F8E721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/msanford/Documents/Projects/socialradar/iOS-App/ParkourMethod/Info.plist"; sourceTree = "<absolute>"; };
 		D8C6E71A1C131BB400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E71E1C131D5200F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D8C6E7251C1320EE00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D8C6E7281C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D8C6E72A1C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D8C6E72E1C1321B400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D8C6E7311C1321C600F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-AppleVisits.xcassets"; sourceTree = "<group>"; };
 		D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-Sense360.xcassets"; sourceTree = "<group>"; };
 		D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-ParkourMethod.xcassets"; sourceTree = "<group>"; };
@@ -175,7 +167,6 @@
 				D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */,
 				D87D528F1C12AA36000F345D /* LaunchScreen.storyboard */,
 				D87CC4081C129607005666E4 /* Info.plist */,
-				D8C6E72D1C1321B400F0C209 /* Localizable.strings */,
 			);
 			path = AppleVisits;
 			sourceTree = "<group>";
@@ -186,7 +177,6 @@
 				D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */,
 				D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */,
 				D87DFD331C12A35F00F8E721 /* Info.plist */,
-				D8C6E7301C1321C600F0C209 /* Localizable.strings */,
 			);
 			path = Sense360;
 			sourceTree = "<group>";
@@ -197,7 +187,6 @@
 				D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */,
 				D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */,
 				D87DFD4C1C12A38F00F8E721 /* Info.plist */,
-				D8C6E7241C1320EE00F0C209 /* Localizable.strings */,
 			);
 			name = "Parkour Method";
 			path = ParkourMethod;
@@ -209,7 +198,6 @@
 				D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */,
 				D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */,
 				D8FC0A591BFF570D00AB660A /* Info.plist */,
-				D8C6E7291C13217F00F0C209 /* Localizable.strings */,
 				D83E8D9C1BFF59BD00477D2A /* LocationKitApp-Bridging-Header.h */,
 			);
 			path = LocationKit;
@@ -405,7 +393,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C6E7341C1322B300F0C209 /* Localizable.strings in Resources */,
 				D87D52901C12AA36000F345D /* LaunchScreen.storyboard in Resources */,
 				D87D52991C12AF5A000F345D /* Assets-Shared.xcassets in Resources */,
 				D87CC4011C129607005666E4 /* Main.storyboard in Resources */,
@@ -417,7 +404,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C6E7351C1322BC00F0C209 /* Localizable.strings in Resources */,
 				D87D52971C12AF48000F345D /* Assets-Shared.xcassets in Resources */,
 				D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */,
 				D87DFD2C1C12A35F00F8E721 /* Main.storyboard in Resources */,
@@ -429,7 +415,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C6E7261C1320EE00F0C209 /* Localizable.strings in Resources */,
 				D87D52981C12AF59000F345D /* Assets-Shared.xcassets in Resources */,
 				D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */,
 				D8F3DFE11C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets in Resources */,
@@ -442,7 +427,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F3DFE41C13178200EA0F16 /* Assets-LocationKit.xcassets in Resources */,
-				D8C6E7331C1322AB00F0C209 /* Localizable.strings in Resources */,
 				D87D529A1C12AF5B000F345D /* Assets-Shared.xcassets in Resources */,
 				D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */,
 				D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */,
@@ -714,44 +698,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		D8C6E7241C1320EE00F0C209 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8C6E7251C1320EE00F0C209 /* Base */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D8C6E7281C13217F00F0C209 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D8C6E7291C13217F00F0C209 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8C6E72A1C13217F00F0C209 /* Base */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		D8C6E72D1C1321B400F0C209 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8C6E72E1C1321B400F0C209 /* Base */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		D8C6E7301C1321C600F0C209 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8C6E7311C1321C600F0C209 /* Base */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		D8FC0A511BFF570D00AB660A /* Main.storyboard */ = {
