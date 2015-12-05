@@ -7,17 +7,17 @@
 //
 
 import Foundation
-import LocationKit
+import CoreLocation
 
 class LocationItem: BaseLocationItem {
     
-    var visit: LKVisit?
+    var visit: CLVisit?
     
-    let placemark: LKPlacemark?
+    let placemark: CLPlacemark?
     let placemarkDate: NSDate?
     let placemarkCoordinate: CLLocationCoordinate2D?
 
-    init(place: LKPlacemark, date: NSDate, coordinate: CLLocationCoordinate2D) {
+    init(place: CLPlacemark, date: NSDate, coordinate: CLLocationCoordinate2D) {
         placemark = place
         placemarkDate = date
         placemarkCoordinate = coordinate
@@ -25,7 +25,7 @@ class LocationItem: BaseLocationItem {
         super.init()
     }
     
-    init(visit: LKVisit) {
+    init(visit: CLVisit) {
         self.visit = visit
         placemark = nil
         placemarkDate = nil
@@ -34,16 +34,7 @@ class LocationItem: BaseLocationItem {
     }
     
     override var title: String {
-        if let visit = visit {
-            return visit.place.name ?? "\(visit.place.subThoroughfare) \(visit.place.thoroughfare)"
-            
-        } else if let placemark = placemark {
-            return placemark.venue?.name ?? "\(placemark.subThoroughfare) \(placemark.thoroughfare)"
-            
-        } else {
-            assert(false, "LocationItem in invalid state. this should never happen")
-            return ""
-        }
+        return placemark?.name ?? ""
     }
 
     override var date: NSDate {
@@ -55,15 +46,7 @@ class LocationItem: BaseLocationItem {
     }
     
     override var venueName: String? {
-        return placemark?.venue?.name
-    }
-    
-    override var venueCategory: String? {
-        return placemark?.venue?.category
-    }
-
-    override var venueSubcategory: String? {
-        return placemark?.venue?.subcategory
+        return placemark?.name
     }
     
     override var thoroughfare: String? {
@@ -84,10 +67,6 @@ class LocationItem: BaseLocationItem {
     
     override var postalCode: String? {
         return placemark?.postalCode
-    }
-    
-    override var detectionMethod: String? {
-        return placemark?.locationKitEntranceSource
     }
     
     override var isVisit: Bool {
@@ -123,8 +102,8 @@ class LocationItem: BaseLocationItem {
     }
     
     @objc required init?(coder aDecoder: NSCoder) {
-        visit = aDecoder.decodeObjectForKey("visit") as? LKVisit
-        placemark = aDecoder.decodeObjectForKey("placemark") as? LKPlacemark
+        visit = aDecoder.decodeObjectForKey("visit") as? CLVisit
+        placemark = aDecoder.decodeObjectForKey("placemark") as? CLPlacemark
         placemarkDate = aDecoder.decodeObjectForKey("placemarkDate") as? NSDate
         let latitude = aDecoder.decodeDoubleForKey("placemarkLatitude")
         let longitude = aDecoder.decodeDoubleForKey("placemarkLongitude")

@@ -15,25 +15,10 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
 
     // Location History
     var allLocationItems: [DayLocationInfo] = []
-    
-    // App Name
-    var appName: String {
-        assert(false, "should never happen. this is an abstract property")
-        return ""
-    }
-    
-    // App Color
-    var appColor: UIColor {
-        assert(false, "should never happen. this is an abstract property")
-        return UIColor.clearColor()
-    }
-    
-    // CSV Header {
-    var csvHeaderText: String {
-        assert(false, "should never happen. this is an abstract property")
-        return ""
-    }
-    
+    var appName: String!
+    var appColor: UIColor!
+    var detectionMethodSupported: Bool = false
+
     // MARK: Location History
     func addCurrentPlace(handler: (CLLocationCoordinate2D?, NSError?) -> Void) {
         assert(false, "should never happen. this is an abstract function")
@@ -116,6 +101,12 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
         set {
             NSUserDefaults.standardUserDefaults().setBool(newValue, forKey: trackingKey)
             NSUserDefaults.standardUserDefaults().synchronize()
+            
+            if newValue {
+                startLocationTracking()
+            } else {
+                stopLocationTracking()
+            }
         }
     }
 
@@ -129,6 +120,14 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
+    
+    func startLocationTracking() {
+        assert(false, "should never happen. this is an abstract function")
+    }
+    
+    func stopLocationTracking() {
+        assert(false, "should never happen. this is an abstract function")
+    }
 
     // MARK UIApplicationDelegate
     var window: UIWindow?
@@ -141,6 +140,10 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
         loadLocationHistory()
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil))
+        
+        if trackingEnabled  {
+            startLocationTracking()
+        }
         
         return true
     }

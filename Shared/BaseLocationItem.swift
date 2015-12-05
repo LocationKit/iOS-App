@@ -10,6 +10,18 @@ import LocationKit
 import CoreLocation
 
 class BaseLocationItem: NSObject, NSCoding {
+    static let csvHeaderText = "visit|place,arrival_day,arrival_time,departure_day,departure_time,latitude,longitude,flagged,venue_name,street_address,city,state,postal_code"
+
+    static let dayFormatter = NSDateFormatter()
+    static let timeFormatter = NSDateFormatter()
+    
+    override class func initialize() {
+        dayFormatter.dateStyle = .ShortStyle
+        dayFormatter.timeStyle = .NoStyle
+        timeFormatter.dateStyle = .NoStyle
+        timeFormatter.timeStyle = .ShortStyle
+    }
+
     var flagged: Bool = false
     
     override init() {
@@ -77,7 +89,34 @@ class BaseLocationItem: NSObject, NSCoding {
     }
     
     var csvText: String {
-        return ""
+        // visit|place,dd/mm/yyyy,16:34:50,dd/mm/yyyy,16:34:50,latitude,longitude,flagged,
+        let title: String
+        let departureText: String
+        if isVisit {
+            title = "visit"
+            departureText = "\(BaseLocationItem.dayFormatter.stringFromDate(visitDepartureDate)),\(BaseLocationItem.timeFormatter.stringFromDate(visitDepartureDate))"
+        } else {
+            title = "place"
+            departureText = ","
+        }
+        
+        let streetName: String
+        if let name = thoroughfare {
+            if let streetNumber = subThoroughfare {
+                streetName = "\(streetNumber) \(name)"
+            } else {
+                streetName = name
+            }
+        } else {
+            streetName = ""
+        }
+        
+        let city: String = locality ?? ""
+        let state: String = administrativeArea ?? ""
+        let zipCode: String = postalCode ?? ""
+        
+        let csvText = "\(title),\(BaseLocationItem.dayFormatter.stringFromDate(date)),\(BaseLocationItem.timeFormatter.stringFromDate(date)),\(departureText),\(coordinate.latitude),\(coordinate.longitude),\(flagged ? "1" : ""), \(venueName),\(streetName),\(city),\(state),\(zipCode)"
+        return csvText
     }
     
     @objc func encodeWithCoder(aCoder: NSCoder) {

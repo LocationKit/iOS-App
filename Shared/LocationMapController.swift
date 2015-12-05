@@ -186,7 +186,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     }
 
     private func emailLocationHistory() {
-        var csvText = appDelegate.csvHeaderText + "\n"
+        var csvText = BaseLocationItem.csvHeaderText + "\n"
         for dayInfo in appDelegate.allLocationItems {
             for locationItem in dayInfo.locationItems {
                 csvText += locationItem.csvText + "\n"

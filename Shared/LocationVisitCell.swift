@@ -32,6 +32,10 @@ class LocationVisitCell: UITableViewCell {
         timeFormatter.timeStyle = .ShortStyle
     }
     
+    private var appDelegate: BaseAppDelegate {
+        return UIApplication.sharedApplication().delegate as! BaseAppDelegate
+    }
+
     func updateUI(locationItem: BaseLocationItem) {
         // populate address info
         var placeText: String = ""
@@ -102,12 +106,17 @@ class LocationVisitCell: UITableViewCell {
         flaggedView.hidden = !locationItem.flagged
 
         // populate detection method label
-        if let source = locationItem.detectionMethod {
-            detectionMethodLabel.text = "Detection Method: \(source)"
+        if appDelegate.detectionMethodSupported {
+            detectionMethodLabel.hidden = false
+            if let source = locationItem.detectionMethod {
+                detectionMethodLabel.text = "Detection Method: \(source)"
+            } else {
+                detectionMethodLabel.text = "Detection Method: Unknown"
+            }
         } else {
-            detectionMethodLabel.text = "Detection Method: Unknown"
+            detectionMethodLabel.hidden = true
         }
-    }    
+    }
 }
 
 

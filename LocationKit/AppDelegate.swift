@@ -15,28 +15,15 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
     
     override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let result = super.application(application, didFinishLaunchingWithOptions: launchOptions)
-        
+        appName = "Location Kit"
+        appColor = UIColor(red: 253.0/255.0, green: 95.0/255.0, blue: 19.0/255.0, alpha: 1.0)
+        detectionMethodSupported = true
+            
         locationManager = LKLocationManager()
         locationManager.apiToken = "5edaa3229d939d41"
         locationManager.advancedDelegate = self
         
-        return result
-    }
-    
-    override var trackingEnabled: Bool {
-        get {
-            return super.trackingEnabled
-        }
-        set {
-            super.trackingEnabled = newValue
-            
-            if newValue {
-                locationManager.startMonitoringVisits()
-            } else {
-                locationManager.stopMonitoringVisits()
-            }
-        }
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions)        
     }
     
     // MARK: LKLocationManagerDelegate
@@ -80,21 +67,6 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
         }
     }
     
-    // MARK: App Theme
-    override var appName: String {
-        return "Location Kit"
-    }
-    
-    // App Color
-    override var appColor: UIColor {
-        return UIColor(red: 253.0/255.0, green: 95.0/255.0, blue: 19.0/255.0, alpha: 1.0)
-    }
-    
-    // CSV Header
-    override var csvHeaderText: String {
-        return LocationItem.csvText
-    }
-    
     override func addCurrentPlace(handler: (CLLocationCoordinate2D?, NSError?) -> Void) {
         locationManager.requestPlace() { [unowned self] place, error in
             if let place = place {
@@ -123,4 +95,12 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
         }
     }
     
+    override func startLocationTracking() {
+        locationManager.startMonitoringVisits()
+    }
+    
+    override func stopLocationTracking() {
+        locationManager.stopMonitoringVisits()
+    }
+
 }
