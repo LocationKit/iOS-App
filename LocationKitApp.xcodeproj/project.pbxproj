@@ -11,27 +11,11 @@
 		D83E8D991BFF595700477D2A /* LocationVisitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8D981BFF595700477D2A /* LocationVisitsController.swift */; };
 		D83E8D9B1BFF597100477D2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
 		D83E8DA51BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
-		D83E8DA61BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
-		D83E8DA71BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
-		D83E8DA81BFF673600477D2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
-		D83E8DAA1BFF673B00477D2A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8DA91BFF673B00477D2A /* Pods.framework */; };
-		D83E8DAC1BFF674200477D2A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8DAB1BFF674200477D2A /* Pods.framework */; };
-		D83E8DAD1BFF674900477D2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
 		D841432B1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */; };
-		D841432C1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */; };
-		D841432D1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432A1C00D3E800AFCC67 /* DayLocationInfo.swift */; };
 		D841432F1C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432E1C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift */; };
-		D84143301C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432E1C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift */; };
-		D84143311C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432E1C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift */; };
 		D84143331C00D68900AFCC67 /* AppDelegate+DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143321C00D68900AFCC67 /* AppDelegate+DummyData.swift */; };
-		D84143341C00D68900AFCC67 /* AppDelegate+DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143321C00D68900AFCC67 /* AppDelegate+DummyData.swift */; };
-		D84143351C00D68900AFCC67 /* AppDelegate+DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143321C00D68900AFCC67 /* AppDelegate+DummyData.swift */; };
 		D84143371C00DE1A00AFCC67 /* LocationMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143361C00DE1A00AFCC67 /* LocationMapController.swift */; };
-		D84143381C00DE1A00AFCC67 /* LocationMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143361C00DE1A00AFCC67 /* LocationMapController.swift */; };
-		D84143391C00DE1A00AFCC67 /* LocationMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143361C00DE1A00AFCC67 /* LocationMapController.swift */; };
 		D841433B1C01110100AFCC67 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* LocationItem.swift */; };
-		D841433C1C01110100AFCC67 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* LocationItem.swift */; };
-		D841433D1C01110100AFCC67 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* LocationItem.swift */; };
 		D87CC3F31C129607005666E4 /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
 		D87CC3F41C129607005666E4 /* AppDelegate+DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143321C00D68900AFCC67 /* AppDelegate+DummyData.swift */; };
 		D87CC3F51C129607005666E4 /* AppDelegate+VisitHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841432E1C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift */; };
@@ -73,12 +57,10 @@
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7261C1320EE00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7241C1320EE00F0C209 /* Localizable.strings */; };
-		D8C6E72B1C13217F00F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7331C1322AB00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7291C13217F00F0C209 /* Localizable.strings */; };
 		D8C6E7341C1322B300F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E72D1C1321B400F0C209 /* Localizable.strings */; };
 		D8C6E7351C1322BC00F0C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7301C1321C600F0C209 /* Localizable.strings */; };
-		D8F3DFD21C130F8000EA0F16 /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
-		D8F3DFD31C130F8100EA0F16 /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
+		D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
 		D8F3DFDD1C13129D00EA0F16 /* Assets-AppleVisits.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */; };
 		D8F3DFDF1C1313F300EA0F16 /* Assets-Sense360.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */; };
 		D8F3DFE11C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */; };
@@ -86,23 +68,6 @@
 		D8FC0A4E1BFF570D00AB660A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A4D1BFF570D00AB660A /* AppDelegate.swift */; };
 		D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D8FC0A5F1BFF570D00AB660A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8FC0A421BFF570D00AB660A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8FC0A491BFF570D00AB660A;
-			remoteInfo = LocationKitApp;
-		};
-		D8FC0A6A1BFF570D00AB660A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8FC0A421BFF570D00AB660A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8FC0A491BFF570D00AB660A;
-			remoteInfo = LocationKitApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0707CDDA7F84CBCC8EB274DD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +107,6 @@
 		D8FC0A521BFF570D00AB660A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-Shared.xcassets"; sourceTree = "<group>"; };
 		D8FC0A591BFF570D00AB660A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8FC0A5E1BFF570D00AB660A /* LocationKitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationKitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8FC0A691BFF570D00AB660A /* LocationKitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationKitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,24 +143,6 @@
 			files = (
 				D83E8D9B1BFF597100477D2A /* MapKit.framework in Frameworks */,
 				861CC528F74AD87E4D4CA8D8 /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8FC0A5B1BFF570D00AB660A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D83E8DAA1BFF673B00477D2A /* Pods.framework in Frameworks */,
-				D83E8DA81BFF673600477D2A /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8FC0A661BFF570D00AB660A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D83E8DAD1BFF674900477D2A /* MapKit.framework in Frameworks */,
-				D83E8DAC1BFF674200477D2A /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				D8FC0A4A1BFF570D00AB660A /* LocationKitApp.app */,
-				D8FC0A5E1BFF570D00AB660A /* LocationKitAppTests.xctest */,
-				D8FC0A691BFF570D00AB660A /* LocationKitAppUITests.xctest */,
 				D87CC4071C129607005666E4 /* AppleVisitsApp.app */,
 				D87DFD321C12A35F00F8E721 /* Sense360App.app */,
 				D87DFD4B1C12A38F00F8E721 /* ParkourMethodApp.app */,
@@ -413,42 +356,6 @@
 			productReference = D8FC0A4A1BFF570D00AB660A /* LocationKitApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8FC0A5D1BFF570D00AB660A /* LocationKitAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8FC0A751BFF570D00AB660A /* Build configuration list for PBXNativeTarget "LocationKitAppTests" */;
-			buildPhases = (
-				D8FC0A5A1BFF570D00AB660A /* Sources */,
-				D8FC0A5B1BFF570D00AB660A /* Frameworks */,
-				D8FC0A5C1BFF570D00AB660A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8FC0A601BFF570D00AB660A /* PBXTargetDependency */,
-			);
-			name = LocationKitAppTests;
-			productName = LocationKitAppTests;
-			productReference = D8FC0A5E1BFF570D00AB660A /* LocationKitAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D8FC0A681BFF570D00AB660A /* LocationKitAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8FC0A781BFF570D00AB660A /* Build configuration list for PBXNativeTarget "LocationKitAppUITests" */;
-			buildPhases = (
-				D8FC0A651BFF570D00AB660A /* Sources */,
-				D8FC0A661BFF570D00AB660A /* Frameworks */,
-				D8FC0A671BFF570D00AB660A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8FC0A6B1BFF570D00AB660A /* PBXTargetDependency */,
-			);
-			name = LocationKitAppUITests;
-			productName = LocationKitAppUITests;
-			productReference = D8FC0A691BFF570D00AB660A /* LocationKitAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -470,14 +377,6 @@
 							};
 						};
 					};
-					D8FC0A5D1BFF570D00AB660A = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = D8FC0A491BFF570D00AB660A;
-					};
-					D8FC0A681BFF570D00AB660A = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = D8FC0A491BFF570D00AB660A;
-					};
 				};
 			};
 			buildConfigurationList = D8FC0A451BFF570D00AB660A /* Build configuration list for PBXProject "LocationKitApp" */;
@@ -494,8 +393,6 @@
 			projectRoot = "";
 			targets = (
 				D8FC0A491BFF570D00AB660A /* LocationKitApp */,
-				D8FC0A5D1BFF570D00AB660A /* LocationKitAppTests */,
-				D8FC0A681BFF570D00AB660A /* LocationKitAppUITests */,
 				D87CC3F01C129607005666E4 /* AppleVisitsApp */,
 				D87DFD1B1C12A35F00F8E721 /* Sense360App */,
 				D87DFD341C12A38F00F8E721 /* ParkourMethodApp */,
@@ -535,7 +432,6 @@
 				D8C6E7261C1320EE00F0C209 /* Localizable.strings in Resources */,
 				D87D52981C12AF59000F345D /* Assets-Shared.xcassets in Resources */,
 				D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */,
-				D8C6E72B1C13217F00F0C209 /* LaunchScreen.storyboard in Resources */,
 				D8F3DFE11C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets in Resources */,
 				D87DFD451C12A38F00F8E721 /* Main.storyboard in Resources */,
 			);
@@ -548,23 +444,8 @@
 				D8F3DFE41C13178200EA0F16 /* Assets-LocationKit.xcassets in Resources */,
 				D8C6E7331C1322AB00F0C209 /* Localizable.strings in Resources */,
 				D87D529A1C12AF5B000F345D /* Assets-Shared.xcassets in Resources */,
+				D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */,
 				D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8FC0A5C1BFF570D00AB660A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8F3DFD31C130F8100EA0F16 /* Assets-Shared.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8FC0A671BFF570D00AB660A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8F3DFD21C130F8000EA0F16 /* Assets-Shared.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,46 +695,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8FC0A5A1BFF570D00AB660A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D83E8DA61BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */,
-				D84143301C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift in Sources */,
-				D841432C1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */,
-				D84143381C00DE1A00AFCC67 /* LocationMapController.swift in Sources */,
-				D841433C1C01110100AFCC67 /* LocationItem.swift in Sources */,
-				D84143341C00D68900AFCC67 /* AppDelegate+DummyData.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8FC0A651BFF570D00AB660A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D83E8DA71BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */,
-				D84143311C00D44A00AFCC67 /* AppDelegate+VisitHistory.swift in Sources */,
-				D841432D1C00D3E800AFCC67 /* DayLocationInfo.swift in Sources */,
-				D84143391C00DE1A00AFCC67 /* LocationMapController.swift in Sources */,
-				D841433D1C01110100AFCC67 /* LocationItem.swift in Sources */,
-				D84143351C00D68900AFCC67 /* AppDelegate+DummyData.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D8FC0A601BFF570D00AB660A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8FC0A491BFF570D00AB660A /* LocationKitApp */;
-			targetProxy = D8FC0A5F1BFF570D00AB660A /* PBXContainerItemProxy */;
-		};
-		D8FC0A6B1BFF570D00AB660A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8FC0A491BFF570D00AB660A /* LocationKitApp */;
-			targetProxy = D8FC0A6A1BFF570D00AB660A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */ = {
@@ -1162,84 +1004,6 @@
 			};
 			name = Release;
 		};
-		D8FC0A761BFF570D00AB660A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
-				INFOPLIST_FILE = LocationKitAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitAppTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationKitApp.app/LocationKitApp";
-			};
-			name = Debug;
-		};
-		D8FC0A771BFF570D00AB660A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
-				INFOPLIST_FILE = LocationKitAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitAppTests-Bridging-Header.h";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationKitApp.app/LocationKitApp";
-			};
-			name = Release;
-		};
-		D8FC0A791BFF570D00AB660A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
-				INFOPLIST_FILE = LocationKitAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitAppUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_TARGET_NAME = LocationKitApp;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		D8FC0A7A1BFF570D00AB660A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
-				INFOPLIST_FILE = LocationKitAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitAppUITests-Bridging-Header.h";
-				TEST_TARGET_NAME = LocationKitApp;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1284,24 +1048,6 @@
 			buildConfigurations = (
 				D8FC0A731BFF570D00AB660A /* Debug */,
 				D8FC0A741BFF570D00AB660A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8FC0A751BFF570D00AB660A /* Build configuration list for PBXNativeTarget "LocationKitAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8FC0A761BFF570D00AB660A /* Debug */,
-				D8FC0A771BFF570D00AB660A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8FC0A781BFF570D00AB660A /* Build configuration list for PBXNativeTarget "LocationKitAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8FC0A791BFF570D00AB660A /* Debug */,
-				D8FC0A7A1BFF570D00AB660A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

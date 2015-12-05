@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Yku-qG-be9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-LocationKit" translatesAutoresizingMaskIntoConstraints="NO" id="Yku-qG-be9">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <animations/>
                                 <constraints>
@@ -25,22 +25,38 @@
                                     <constraint firstAttribute="height" constant="300" id="Mf4-H2-Bqd"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationKitLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XHb-ic-YLt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmW-oL-aNr">
+                                <rect key="frame" x="0.0" y="474" width="600" height="126"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.37254901959999998" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="c6n-a9-tLd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Kit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="407-oM-Xqj">
                                 <rect key="frame" x="150" y="474" width="300" height="74"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="b3t-QS-NnD"/>
-                                    <constraint firstAttribute="width" constant="300" id="cgq-3b-TmT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="1kA-Hv-bbA"/>
+                                    <constraint firstAttribute="width" constant="300" id="6Xg-pE-aM9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="VoX-yx-tQT"/>
+                                    <constraint firstAttribute="height" constant="74" id="gWd-QW-Nli"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.99215686274509807" green="0.37254901960784315" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lmW-oL-aNr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4lN-e5-iIZ"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="lmW-oL-aNr" secondAttribute="bottom" id="9BA-bV-aVh"/>
+                            <constraint firstAttribute="trailing" secondItem="lmW-oL-aNr" secondAttribute="trailing" id="NUY-oB-p75"/>
                             <constraint firstItem="Yku-qG-be9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eAd-j8-4D5"/>
-                            <constraint firstItem="XHb-ic-YLt" firstAttribute="top" secondItem="Yku-qG-be9" secondAttribute="bottom" constant="24" id="gie-DI-okO"/>
+                            <constraint firstItem="407-oM-Xqj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gpq-5c-4k1"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="407-oM-Xqj" secondAttribute="bottom" constant="52" id="gzp-Da-hFd"/>
                             <constraint firstItem="Yku-qG-be9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qsd-BG-Gku"/>
-                            <constraint firstItem="XHb-ic-YLt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xN3-m4-HWr"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -50,7 +66,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchIcon" width="300" height="300"/>
-        <image name="LocationKitLogo" width="393" height="96"/>
+        <image name="Logo-LocationKit" width="300" height="300"/>
     </resources>
 </document>

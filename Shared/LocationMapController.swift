@@ -40,7 +40,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
             red = colorInfo["red"] as? NSNumber, green = colorInfo["green"] as? NSNumber, blue = colorInfo["blue"] as? NSNumber {
                 
             let backgroundColor = UIColor(red: CGFloat(red.doubleValue / 255.0), green: CGFloat(green.doubleValue / 255.0), blue: CGFloat(blue.doubleValue / 255.0), alpha: 1.0)
-            navigationController.navigationBar.backgroundColor = backgroundColor
+            navigationController.navigationBar.barTintColor = backgroundColor
         }
         
         if let recentDayVisitInfo = appDelegate.allLocationItems.first, locationItem = recentDayVisitInfo.locationItems.first {

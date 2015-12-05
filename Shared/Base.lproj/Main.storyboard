@@ -164,7 +164,6 @@ Washington DC 22001</string>
                                     </subviews>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstItem="YIn-nr-8nL" firstAttribute="centerY" secondItem="Qfv-nI-Udl" secondAttribute="centerY" id="12y-ib-i71"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Wm0-c0-03Z" secondAttribute="trailing" constant="4" id="1dc-Ln-fog"/>
                                         <constraint firstItem="HLe-pb-s32" firstAttribute="leading" secondItem="jCO-ZO-rcy" secondAttribute="trailing" constant="12" id="50G-jl-Muj"/>
                                         <constraint firstItem="0zb-dC-WqG" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="top" constant="12" id="7o4-lB-R6L"/>
@@ -174,11 +173,9 @@ Washington DC 22001</string>
                                         <constraint firstItem="HLe-pb-s32" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="topMargin" id="Ico-gk-ws4"/>
                                         <constraint firstItem="p0q-ib-byx" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="top" id="NLv-Wd-hIN"/>
                                         <constraint firstAttribute="bottom" secondItem="Wm0-c0-03Z" secondAttribute="bottom" constant="20" id="NTy-vi-9Bg"/>
-                                        <constraint firstItem="jCO-ZO-rcy" firstAttribute="centerY" secondItem="Qfv-nI-Udl" secondAttribute="centerY" id="Nr0-FE-kqt"/>
                                         <constraint firstAttribute="trailing" secondItem="YIn-nr-8nL" secondAttribute="trailing" constant="12" id="PyO-re-MKL"/>
                                         <constraint firstItem="Wm0-c0-03Z" firstAttribute="leading" secondItem="jCO-ZO-rcy" secondAttribute="trailing" constant="12" id="ROd-Qa-Xv4"/>
                                         <constraint firstItem="jCO-ZO-rcy" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="top" constant="16" id="Tx5-WQ-Lx6"/>
-                                        <constraint firstItem="0zb-dC-WqG" firstAttribute="centerY" secondItem="Qfv-nI-Udl" secondAttribute="centerY" id="VpW-Ra-mlO"/>
                                         <constraint firstItem="DEH-q3-s6o" firstAttribute="leading" secondItem="Wm0-c0-03Z" secondAttribute="leading" id="clo-dx-cNc"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="DEH-q3-s6o" secondAttribute="bottom" constant="-6" id="gGP-dk-o3q"/>
                                         <constraint firstItem="jCO-ZO-rcy" firstAttribute="leading" secondItem="Qfv-nI-Udl" secondAttribute="leading" constant="16" id="hK4-bZ-b4c"/>
@@ -187,13 +184,6 @@ Washington DC 22001</string>
                                         <constraint firstItem="YIn-nr-8nL" firstAttribute="top" secondItem="Qfv-nI-Udl" secondAttribute="top" constant="12" id="sTr-7h-WPS"/>
                                         <constraint firstAttribute="bottom" secondItem="p0q-ib-byx" secondAttribute="bottom" id="zYs-Fp-eO2"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="Nr0-FE-kqt"/>
-                                            <exclude reference="VpW-Ra-mlO"/>
-                                            <exclude reference="12y-ib-i71"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
@@ -229,11 +219,11 @@ Washington DC 22001</string>
                         <viewControllerLayoutGuide type="bottom" id="hL7-3O-1HE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Wp-Pb-gPG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="phB-5f-5Zd">
-                                <rect key="frame" x="0.0" y="64" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="jfH-eo-GF3"/>
@@ -241,14 +231,14 @@ Washington DC 22001</string>
                                 </constraints>
                             </mapView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87o-4b-Ia3">
-                                <rect key="frame" x="0.0" y="264" width="600" height="336"/>
+                                <rect key="frame" x="0.0" y="200" width="600" height="336"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="jD9-ap-0HH" kind="embed" id="AO9-Tg-qpS"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tE-uq-ddc">
-                                <rect key="frame" x="0.0" y="264" width="600" height="1"/>
+                                <rect key="frame" x="0.0" y="200" width="600" height="1"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.66918103448275867" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -264,25 +254,29 @@ Washington DC 22001</string>
                             <constraint firstItem="87o-4b-Ia3" firstAttribute="top" secondItem="phB-5f-5Zd" secondAttribute="bottom" id="7wJ-DD-Olp"/>
                             <constraint firstItem="phB-5f-5Zd" firstAttribute="leading" secondItem="4Wp-Pb-gPG" secondAttribute="leading" id="9zY-io-p9m"/>
                             <constraint firstItem="87o-4b-Ia3" firstAttribute="leading" secondItem="4Wp-Pb-gPG" secondAttribute="leading" id="CF1-WW-zSK"/>
-                            <constraint firstItem="hL7-3O-1HE" firstAttribute="top" secondItem="87o-4b-Ia3" secondAttribute="bottom" id="I0E-9I-LdK"/>
+                            <constraint firstItem="87o-4b-Ia3" firstAttribute="bottom" secondItem="4Wp-Pb-gPG" secondAttribute="bottomMargin" id="bdI-ZW-Uas"/>
                             <constraint firstAttribute="trailing" secondItem="87o-4b-Ia3" secondAttribute="trailing" id="kfR-Eg-vd6"/>
                             <constraint firstItem="5tE-uq-ddc" firstAttribute="leading" secondItem="4Wp-Pb-gPG" secondAttribute="leading" id="osX-Kf-J9Q"/>
                             <constraint firstAttribute="trailing" secondItem="phB-5f-5Zd" secondAttribute="trailing" id="r44-hf-Md3"/>
                             <constraint firstItem="phB-5f-5Zd" firstAttribute="top" secondItem="kNv-sO-1Wj" secondAttribute="bottom" id="zbY-7h-Hk7"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="LocationKit" id="cIW-xx-R79">
                         <barButtonItem key="leftBarButtonItem" image="NavLocationPin" id="IqZ-5Z-r4V">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="addCurrentPlace" destination="1cL-6A-U7V" id="qQs-sH-jpd"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="NavGear" id="Ur4-zY-ggw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="showActions" destination="1cL-6A-U7V" id="DCn-vj-ca2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="actionButton" destination="Ur4-zY-ggw" id="Jeb-Zm-0AO"/>
                         <outlet property="mapView" destination="phB-5f-5Zd" id="I7G-Gg-LPs"/>
@@ -297,10 +291,13 @@ Washington DC 22001</string>
         <scene sceneID="g8R-Zh-Y31">
             <objects>
                 <navigationController id="K5D-Ft-Ud7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O2I-p3-Dj8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="O2I-p3-Dj8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="1cL-6A-U7V" kind="relationship" relationship="rootViewController" id="uaH-3f-ZTO"/>
