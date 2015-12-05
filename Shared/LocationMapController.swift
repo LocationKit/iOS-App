@@ -49,17 +49,19 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         
         mapView.showsUserLocation = true
 
-        backgroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.didEnterBackground, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
+        backgroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationDidEnterBackgroundNotification, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
             // We basically need to do this because Apple will keep a high powered Location Manager instance
             // around to show the blue user dot, but we don't want that when the app is in the background
             // as it'll result in additional, unwanted, battery drain
             self?.mapView.showsUserLocation = false
         }
-        foregroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.didEnterForeground, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
-            self?.mapView.showsUserLocation = true
-            // Center map on user's current location
-            if let loc = self?.mapView.userLocation.location {
-                self?.mapView.setCenterCoordinate(loc.coordinate, animated: true)
+        foregroundObserver = NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillEnterForegroundNotification, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
+            if let strongSelf = self {
+                strongSelf.mapView.showsUserLocation = true
+                // Center map on user's current location
+                if let loc = strongSelf.mapView.userLocation.location {
+                    strongSelf.mapView.setCenterCoordinate(loc.coordinate, animated: true)
+                }
             }
         }
         locationHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in

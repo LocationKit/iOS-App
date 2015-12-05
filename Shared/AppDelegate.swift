@@ -13,8 +13,6 @@ import LocationKit
 class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate {
 
     static let locationHistoryDidChangeNotificationName = "locationHistoryDidChange"
-    static let didEnterForeground = "applicationDidEnterForeground"
-    static let didEnterBackground = "applicationDidEnterBackground"
 
     // Location History
     var allLocationItems: [DayLocationInfo] = []
@@ -90,13 +88,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LKLocationManagerDelegate
         }
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil))
         return true
-    }
-
-    func applicationDidEnterBackground(application: UIApplication) {
-        NSNotificationCenter.defaultCenter().postNotificationName(AppDelegate.didEnterBackground, object: nil)
-    }
-    
-    func applicationWillEnterForeground(application: UIApplication) {
-        NSNotificationCenter.defaultCenter().postNotificationName(AppDelegate.didEnterForeground, object: nil)
     }
 }
