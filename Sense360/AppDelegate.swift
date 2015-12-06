@@ -17,6 +17,7 @@ final class AppDelegate : BaseAppDelegate, TriggerFiredDelegate {
         
         appName = "Sense360"
         appColor = UIColor(red: 27.0/255.0, green: 160.0/255.0, blue: 211.0/255.0, alpha: 1.0)
+        detectionMethodSupported = true
         currentPlaceSupported = false
         helpUrlString = "http://www.sense360.com/docs.html"
 
