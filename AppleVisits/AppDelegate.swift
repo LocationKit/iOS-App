@@ -6,6 +6,7 @@
 //  Copyright © 2015 SocialRadar. All rights reserved.
 //
 
+import UIKit
 import CoreLocation
 
 @UIApplicationMain
@@ -20,6 +21,7 @@ final class AppDelegate : BaseAppDelegate, CLLocationManagerDelegate {
         
         appName = "Apple Visits"
         appColor = UIColor(red: 172.0/255.0, green: 172.0/255.0, blue: 172.0/255.0, alpha: 1.0)
+        helpUrlString = "https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CoreLocation_Framework/"
 
         locationManager = CLLocationManager()
         locationManager.delegate = self
@@ -67,7 +69,7 @@ final class AppDelegate : BaseAppDelegate, CLLocationManagerDelegate {
         
         if notificationsEnabled {
             let localNotification = UILocalNotification()
-            localNotification.alertBody = "Visit started at \(locationItem.title)"
+            localNotification.alertBody = "Visit ended at \(locationItem.title)"
             localNotification.timeZone = NSTimeZone.localTimeZone()
             localNotification.fireDate = NSDate()
             UIApplication.sharedApplication().scheduleLocalNotification(localNotification)

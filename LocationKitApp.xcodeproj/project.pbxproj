@@ -18,7 +18,6 @@
 		D87CC3F91C129607005666E4 /* BaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A4D1BFF570D00AB660A /* BaseAppDelegate.swift */; };
 		D87CC3FA1C129607005666E4 /* LocationMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143361C00DE1A00AFCC67 /* LocationMapController.swift */; };
 		D87CC3FC1C129607005666E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
-		D87CC3FD1C129607005666E4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D87CC4011C129607005666E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 		D87D52901C12AA36000F345D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87D528F1C12AA36000F345D /* LaunchScreen.storyboard */; };
 		D87D52971C12AF48000F345D /* Assets-Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A541BFF570D00AB660A /* Assets-Shared.xcassets */; };
@@ -30,14 +29,12 @@
 		D87DFD241C12A35F00F8E721 /* BaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A4D1BFF570D00AB660A /* BaseAppDelegate.swift */; };
 		D87DFD251C12A35F00F8E721 /* LocationMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143361C00DE1A00AFCC67 /* LocationMapController.swift */; };
 		D87DFD271C12A35F00F8E721 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
-		D87DFD281C12A35F00F8E721 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D87DFD2C1C12A35F00F8E721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 		D87DFD371C12A38F00F8E721 /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
 		D87DFD3A1C12A38F00F8E721 /* LocationVisitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8D981BFF595700477D2A /* LocationVisitsController.swift */; };
 		D87DFD3D1C12A38F00F8E721 /* BaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A4D1BFF570D00AB660A /* BaseAppDelegate.swift */; };
 		D87DFD3E1C12A38F00F8E721 /* LocationMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84143361C00DE1A00AFCC67 /* LocationMapController.swift */; };
 		D87DFD401C12A38F00F8E721 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
-		D87DFD411C12A38F00F8E721 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D87DFD451C12A38F00F8E721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 		D89A1F771C1350E900CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F761C1350E900CEBF53 /* AppDelegate.swift */; };
 		D89A1F7B1C13666800CEBF53 /* BaseLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841433A1C01110100AFCC67 /* BaseLocationItem.swift */; };
@@ -50,6 +47,10 @@
 		D89A1F831C13681C00CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F821C13681C00CEBF53 /* LocationItem.swift */; };
 		D89A1F881C138FF700CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F851C138FE600CEBF53 /* LocationItem.swift */; };
 		D89A1F891C138FFC00CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F841C138FE600CEBF53 /* AppDelegate.swift */; };
+		D89A1F8C1C13A58A00CEBF53 /* parkour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F8A1C13A58300CEBF53 /* parkour.framework */; };
+		D89A1F911C13A70500CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F8D1C13A6FF00CEBF53 /* AppDelegate.swift */; };
+		D89A1F921C13A70800CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */; };
+		D89A1F951C13AA2F00CEBF53 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F941C13AA2F00CEBF53 /* AdSupport.framework */; };
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
@@ -67,7 +68,7 @@
 		B33730A44457B6BA9BB710A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D83E8D981BFF595700477D2A /* LocationVisitsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVisitsController.swift; sourceTree = "<group>"; };
 		D83E8D9A1BFF597100477D2A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D83E8D9C1BFF59BD00477D2A /* LocationKitApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationKitApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		D83E8D9C1BFF59BD00477D2A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "LocationKit/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVisitCell.swift; sourceTree = "<group>"; };
 		D83E8DA91BFF673B00477D2A /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		D83E8DAB1BFF674200477D2A /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
@@ -85,6 +86,11 @@
 		D89A1F821C13681C00CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		D89A1F841C138FE600CEBF53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89A1F851C138FE600CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		D89A1F8A1C13A58300CEBF53 /* parkour.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = parkour.framework; sourceTree = "<group>"; };
+		D89A1F8D1C13A6FF00CEBF53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		D89A1F931C13A7D100CEBF53 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D89A1F941C13AA2F00CEBF53 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D8C6E71A1C131BB400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E71E1C131D5200F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E7281C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,7 +111,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87CC3FC1C129607005666E4 /* MapKit.framework in Frameworks */,
-				D87CC3FD1C129607005666E4 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +119,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87DFD271C12A35F00F8E721 /* MapKit.framework in Frameworks */,
-				D87DFD281C12A35F00F8E721 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87DFD401C12A38F00F8E721 /* MapKit.framework in Frameworks */,
-				D87DFD411C12A38F00F8E721 /* Pods.framework in Frameworks */,
+				D89A1F8C1C13A58A00CEBF53 /* parkour.framework in Frameworks */,
+				D89A1F951C13AA2F00CEBF53 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,9 +180,13 @@
 		D8F3DFD11C130F2500EA0F16 /* Parkour Method */ = {
 			isa = PBXGroup;
 			children = (
+				D89A1F8D1C13A6FF00CEBF53 /* AppDelegate.swift */,
+				D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */,
 				D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */,
 				D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */,
 				D87DFD4C1C12A38F00F8E721 /* Info.plist */,
+				D89A1F931C13A7D100CEBF53 /* Bridging-Header.h */,
+				D89A1F8A1C13A58300CEBF53 /* parkour.framework */,
 			);
 			name = "Parkour Method";
 			path = ParkourMethod;
@@ -191,7 +200,7 @@
 				D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */,
 				D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */,
 				D8FC0A591BFF570D00AB660A /* Info.plist */,
-				D83E8D9C1BFF59BD00477D2A /* LocationKitApp-Bridging-Header.h */,
+				D83E8D9C1BFF59BD00477D2A /* Bridging-Header.h */,
 			);
 			path = LocationKit;
 			sourceTree = "<group>";
@@ -236,6 +245,7 @@
 		DD2FB4F7ED4B7F711A18F6E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D89A1F941C13AA2F00CEBF53 /* AdSupport.framework */,
 				D83E8DAB1BFF674200477D2A /* Pods.framework */,
 				D83E8DA91BFF673B00477D2A /* Pods.framework */,
 				0707CDDA7F84CBCC8EB274DD /* Pods.framework */,
@@ -647,6 +657,8 @@
 				D87DFD3A1C12A38F00F8E721 /* LocationVisitsController.swift in Sources */,
 				D89A1F7C1C13675800CEBF53 /* BaseLocationItem.swift in Sources */,
 				D87DFD3D1C12A38F00F8E721 /* BaseAppDelegate.swift in Sources */,
+				D89A1F911C13A70500CEBF53 /* AppDelegate.swift in Sources */,
+				D89A1F921C13A70800CEBF53 /* LocationItem.swift in Sources */,
 				D89A1F7F1C13675C00CEBF53 /* DayLocationInfo.swift in Sources */,
 				D87DFD3E1C12A38F00F8E721 /* LocationMapController.swift in Sources */,
 			);
@@ -720,7 +732,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -740,7 +751,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -792,13 +802,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParkourMethod",
+				);
 				INFOPLIST_FILE = ParkourMethod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParkourMethod/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -812,13 +826,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParkourMethod",
+				);
 				INFOPLIST_FILE = ParkourMethod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParkourMethod/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -914,13 +932,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParkourMethod",
+				);
 				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationKit/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -934,13 +956,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParkourMethod",
+				);
 				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationKit/Bridging-Header.h";
 			};
 			name = Release;
 		};

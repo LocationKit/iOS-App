@@ -13,6 +13,7 @@ import MessageUI
 class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var placeButton: UIBarButtonItem!
     @IBOutlet weak var actionButton: UIBarButtonItem!
     @IBOutlet weak var titleItem: UINavigationItem!
     
@@ -32,6 +33,10 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        
+        if !appDelegate.currentPlaceSupported {
+            navigationItem.leftBarButtonItem = nil
+        }
         
         titleItem.title = appDelegate.appName
         navigationController?.navigationBar.barTintColor = appDelegate.appColor
@@ -57,7 +62,7 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
                 }
             }
         }
-        locationHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
+        locationHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(BaseAppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
             self?.loadPins()
         }
         
@@ -149,8 +154,10 @@ class LocationMapController: UIViewController, MKMapViewDelegate, MFMailComposeV
         }
         alertController.addAction(notificationsAction)
 
-        let howItWorksAction = UIAlertAction(title: "How does LocationKit work?", style: .Default) { _ in
-            UIApplication.sharedApplication().openURL(NSURL(string: "https://locationkit.io/features/")!)
+        let howItWorksAction = UIAlertAction(title: "How does '\(appDelegate.appName)' work?", style: .Default) { [weak self] _ in
+            if let strongSelf = self {
+                UIApplication.sharedApplication().openURL(NSURL(string: strongSelf.appDelegate.helpUrlString)!)
+            }
         }
         alertController.addAction(howItWorksAction)
 

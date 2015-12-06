@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class BaseAppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,6 +19,8 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
     var appName: String!
     var appColor: UIColor!
     var detectionMethodSupported: Bool = false
+    var currentPlaceSupported: Bool = true
+    var helpUrlString: String! = nil
 
     // MARK: Location History
     func addCurrentPlace(handler: (CLLocationCoordinate2D?, NSError?) -> Void) {
@@ -76,7 +79,7 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
     func purgeAndSave(dayInfos: [DayLocationInfo]) {
         let purgedDayInfos: [DayLocationInfo]
         if dayInfos.count > BaseAppDelegate.maxVisitCount {
-            purgedDayInfos = Array(dayInfos[0..<AppDelegate.maxVisitCount])
+            purgedDayInfos = Array(dayInfos[0..<BaseAppDelegate.maxVisitCount])
         } else {
             purgedDayInfos = dayInfos
         }
@@ -84,7 +87,7 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
         
         allLocationItems = purgedDayInfos
         
-        NSNotificationCenter.defaultCenter().postNotificationName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName(BaseAppDelegate.locationHistoryDidChangeNotificationName, object: nil)
     }
     
     

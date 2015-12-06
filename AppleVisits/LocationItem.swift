@@ -13,9 +13,9 @@ class LocationItem: BaseLocationItem {
     
     var visit: CLVisit?
     
-    let placemark: CLPlacemark?
-    let placemarkDate: NSDate?
-    let placemarkCoordinate: CLLocationCoordinate2D?
+    private let placemark: CLPlacemark?
+    private let placemarkDate: NSDate?
+    private let placemarkCoordinate: CLLocationCoordinate2D?
 
     init(place: CLPlacemark, date: NSDate, coordinate: CLLocationCoordinate2D) {
         placemark = place
@@ -85,7 +85,6 @@ class LocationItem: BaseLocationItem {
         if let visit = visit {
             aCoder.encodeObject(visit, forKey: "visit")
         }
-        aCoder.encodeBool(flagged, forKey: "flagged")
         
         if let placemark = placemark {
             aCoder.encodeObject(placemark, forKey: "placemark")

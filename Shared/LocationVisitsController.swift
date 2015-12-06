@@ -33,7 +33,7 @@ class LocationVisitsController: UITableViewController {
             self.tableView.backgroundView = emptyLabel
         }
 
-        visitHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
+        visitHistoryObserver = NSNotificationCenter.defaultCenter().addObserverForName(BaseAppDelegate.locationHistoryDidChangeNotificationName, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] _ in
             self?.tableView.backgroundView = nil
             self?.tableView.reloadData()
         }
