@@ -56,7 +56,6 @@
 		D89A1FA01C13CADF00CEBF53 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F9F1C13CADF00CEBF53 /* CoreLocation.framework */; };
 		D89A1FA21C13CB1900CEBF53 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1FA11C13CB1900CEBF53 /* CoreMotion.framework */; };
 		D89A1FA41C13CB1D00CEBF53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1FA31C13CB1D00CEBF53 /* SystemConfiguration.framework */; };
-		D89A1FA61C13CC1A00CEBF53 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */; };
 		D89A1FA71C13CC1A00CEBF53 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
@@ -147,7 +146,6 @@
 			files = (
 				D89A1FA41C13CB1D00CEBF53 /* SystemConfiguration.framework in Frameworks */,
 				D89A1FA21C13CB1900CEBF53 /* CoreMotion.framework in Frameworks */,
-				D89A1FA61C13CC1A00CEBF53 /* SenseSdk.framework in Frameworks */,
 				D89A1FA01C13CADF00CEBF53 /* CoreLocation.framework in Frameworks */,
 				D87DFD271C12A35F00F8E721 /* MapKit.framework in Frameworks */,
 			);
@@ -622,9 +620,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = AppleVisits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PODS_FRAMEWORK_BUILD_PATH = "";
+				PODS_ROOT = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -642,9 +647,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = AppleVisits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PODS_FRAMEWORK_BUILD_PATH = "";
+				PODS_ROOT = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -661,14 +673,27 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sense360",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Sense360";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Sense360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-l\"z\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_FRAMEWORK_BUILD_PATH = "";
+				PODS_ROOT = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.testapp.sense360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -686,14 +711,27 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sense360",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Sense360";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Sense360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-l\"z\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_FRAMEWORK_BUILD_PATH = "";
+				PODS_ROOT = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.testapp.sense360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -710,14 +748,25 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ParkourMethod",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/ParkourMethod";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ParkourMethod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-l\"z\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_FRAMEWORK_BUILD_PATH = "";
+				PODS_ROOT = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.testapp.parkourmethod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParkourMethod/Bridging-Header.h";
@@ -734,14 +783,25 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ParkourMethod",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/ParkourMethod";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ParkourMethod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-l\"z\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PODS_FRAMEWORK_BUILD_PATH = "";
+				PODS_ROOT = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.testapp.parkourmethod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParkourMethod/Bridging-Header.h";
@@ -785,6 +845,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_MAP_FILE_PATH = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;

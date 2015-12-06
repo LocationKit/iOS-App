@@ -6,7 +6,6 @@
 //  Copyright © 2015 SocialRadar. All rights reserved.
 //
 
-import LocationKit
 import CoreLocation
 
 class BaseLocationItem: NSObject, NSCoding {

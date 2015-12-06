@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import LocationKit
 
 class DayLocationInfo: NSObject, NSCoding {
     static private var formatter = NSDateFormatter()
