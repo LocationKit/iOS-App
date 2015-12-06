@@ -103,6 +103,8 @@ class LocationItem: BaseLocationItem {
     }
 
     @objc override func encodeWithCoder(aCoder: NSCoder) {
+        super.encodeWithCoder(aCoder)
+        
         if let visit = visit {
             aCoder.encodeObject(visit, forKey: "visit")
         }

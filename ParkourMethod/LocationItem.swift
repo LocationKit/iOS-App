@@ -75,7 +75,7 @@ class LocationItem: BaseLocationItem {
     }
     
     override var isVisit: Bool {
-        return poiLocation != nil
+        return true
     }
     
     override var visitArrivalDate: NSDate {

@@ -1,0 +1,10 @@
+framework module SenseSdk {
+  umbrella header "SenseSdk.h"
+
+  export *
+  module * { export * }
+}
+
+module SenseSdk.Swift {
+    header "SenseSdk-Swift.h"
+}

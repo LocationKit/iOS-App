@@ -51,6 +51,13 @@
 		D89A1F911C13A70500CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F8D1C13A6FF00CEBF53 /* AppDelegate.swift */; };
 		D89A1F921C13A70800CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */; };
 		D89A1F951C13AA2F00CEBF53 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F941C13AA2F00CEBF53 /* AdSupport.framework */; };
+		D89A1F9A1C13BDC800CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F961C13BCB600CEBF53 /* AppDelegate.swift */; };
+		D89A1F9B1C13BDCC00CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F971C13BCB600CEBF53 /* LocationItem.swift */; };
+		D89A1FA01C13CADF00CEBF53 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F9F1C13CADF00CEBF53 /* CoreLocation.framework */; };
+		D89A1FA21C13CB1900CEBF53 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1FA11C13CB1900CEBF53 /* CoreMotion.framework */; };
+		D89A1FA41C13CB1D00CEBF53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1FA31C13CB1D00CEBF53 /* SystemConfiguration.framework */; };
+		D89A1FA61C13CC1A00CEBF53 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */; };
+		D89A1FA71C13CC1A00CEBF53 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
@@ -61,6 +68,20 @@
 		D8FC0A4E1BFF570D00AB660A /* BaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A4D1BFF570D00AB660A /* BaseAppDelegate.swift */; };
 		D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D89A1FA81C13CC1B00CEBF53 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D89A1FA71C13CC1A00CEBF53 /* SenseSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0707CDDA7F84CBCC8EB274DD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +112,12 @@
 		D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		D89A1F931C13A7D100CEBF53 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D89A1F941C13AA2F00CEBF53 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D89A1F961C13BCB600CEBF53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D89A1F971C13BCB600CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
+		D89A1F9F1C13CADF00CEBF53 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D89A1FA11C13CB1900CEBF53 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D89A1FA31C13CB1D00CEBF53 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D8C6E71A1C131BB400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E71E1C131D5200F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E7281C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,6 +145,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89A1FA41C13CB1D00CEBF53 /* SystemConfiguration.framework in Frameworks */,
+				D89A1FA21C13CB1900CEBF53 /* CoreMotion.framework in Frameworks */,
+				D89A1FA61C13CC1A00CEBF53 /* SenseSdk.framework in Frameworks */,
+				D89A1FA01C13CADF00CEBF53 /* CoreLocation.framework in Frameworks */,
 				D87DFD271C12A35F00F8E721 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,9 +201,12 @@
 		D8F3DFD01C130F1600EA0F16 /* Sense360 */ = {
 			isa = PBXGroup;
 			children = (
+				D89A1F961C13BCB600CEBF53 /* AppDelegate.swift */,
+				D89A1F971C13BCB600CEBF53 /* LocationItem.swift */,
 				D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */,
 				D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */,
 				D87DFD331C12A35F00F8E721 /* Info.plist */,
+				D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */,
 			);
 			path = Sense360;
 			sourceTree = "<group>";
@@ -245,6 +279,9 @@
 		DD2FB4F7ED4B7F711A18F6E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D89A1FA31C13CB1D00CEBF53 /* SystemConfiguration.framework */,
+				D89A1FA11C13CB1900CEBF53 /* CoreMotion.framework */,
+				D89A1F9F1C13CADF00CEBF53 /* CoreLocation.framework */,
 				D89A1F941C13AA2F00CEBF53 /* AdSupport.framework */,
 				D83E8DAB1BFF674200477D2A /* Pods.framework */,
 				D83E8DA91BFF673B00477D2A /* Pods.framework */,
@@ -270,12 +307,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D87CC4041C129607005666E4 /* Build configuration list for PBXNativeTarget "AppleVisitsApp" */;
 			buildPhases = (
-				D87CC3F11C129607005666E4 /* Check Pods Manifest.lock */,
 				D87CC3F21C129607005666E4 /* Sources */,
 				D87CC3FB1C129607005666E4 /* Frameworks */,
 				D87CC3FE1C129607005666E4 /* Resources */,
-				D87CC4021C129607005666E4 /* Embed Pods Frameworks */,
-				D87CC4031C129607005666E4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,12 +324,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D87DFD2F1C12A35F00F8E721 /* Build configuration list for PBXNativeTarget "Sense360App" */;
 			buildPhases = (
-				D87DFD1C1C12A35F00F8E721 /* Check Pods Manifest.lock */,
 				D87DFD1D1C12A35F00F8E721 /* Sources */,
 				D87DFD261C12A35F00F8E721 /* Frameworks */,
 				D87DFD291C12A35F00F8E721 /* Resources */,
-				D87DFD2D1C12A35F00F8E721 /* Embed Pods Frameworks */,
-				D87DFD2E1C12A35F00F8E721 /* Copy Pods Resources */,
+				D89A1FA81C13CC1B00CEBF53 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,12 +342,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D87DFD481C12A38F00F8E721 /* Build configuration list for PBXNativeTarget "ParkourMethodApp" */;
 			buildPhases = (
-				D87DFD351C12A38F00F8E721 /* Check Pods Manifest.lock */,
 				D87DFD361C12A38F00F8E721 /* Sources */,
 				D87DFD3F1C12A38F00F8E721 /* Frameworks */,
 				D87DFD421C12A38F00F8E721 /* Resources */,
-				D87DFD461C12A38F00F8E721 /* Embed Pods Frameworks */,
-				D87DFD471C12A38F00F8E721 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -483,141 +512,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D87CC3F11C129607005666E4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D87CC4021C129607005666E4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D87CC4031C129607005666E4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D87DFD1C1C12A35F00F8E721 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D87DFD2D1C12A35F00F8E721 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D87DFD2E1C12A35F00F8E721 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D87DFD351C12A38F00F8E721 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D87DFD461C12A38F00F8E721 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D87DFD471C12A38F00F8E721 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -644,6 +538,8 @@
 				D87DFD211C12A35F00F8E721 /* LocationVisitsController.swift in Sources */,
 				D89A1F7D1C13675800CEBF53 /* BaseLocationItem.swift in Sources */,
 				D87DFD241C12A35F00F8E721 /* BaseAppDelegate.swift in Sources */,
+				D89A1F9A1C13BDC800CEBF53 /* AppDelegate.swift in Sources */,
+				D89A1F9B1C13BDCC00CEBF53 /* LocationItem.swift in Sources */,
 				D89A1F801C13675D00CEBF53 /* DayLocationInfo.swift in Sources */,
 				D87DFD251C12A35F00F8E721 /* LocationMapController.swift in Sources */,
 			);
@@ -732,6 +628,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -751,6 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 			};
 			name = Release;
 		};
@@ -763,13 +661,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sense360",
+				);
 				INFOPLIST_FILE = Sense360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -783,13 +686,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sense360",
+				);
 				INFOPLIST_FILE = Sense360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "LocationKitApp-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -935,6 +843,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ParkourMethod",
+					"$(PROJECT_DIR)/Sense360",
 				);
 				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -959,6 +868,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ParkourMethod",
+					"$(PROJECT_DIR)/Sense360",
 				);
 				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

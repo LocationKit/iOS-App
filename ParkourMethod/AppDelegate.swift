@@ -12,8 +12,6 @@ import UIKit
 final class AppDelegate : BaseAppDelegate {
     
     private var mostRecentLocation: CLLocation?
-    private var currentPlaceHandler: ((CLLocationCoordinate2D?, NSError?) -> Void)?
-    private var timeoutTimer: NSTimer?
     
     override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
