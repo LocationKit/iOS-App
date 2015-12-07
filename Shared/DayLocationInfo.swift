@@ -30,16 +30,6 @@ class DayLocationInfo: NSObject, NSCoding {
     private(set) var locationItems: [BaseLocationItem]
     let formattedDayText: String
     
-//    convenience init(visit: LKVisit) {
-//        let locationItem = LocationItem(visit: visit)
-//        self.init(locationItem: locationItem)
-//    }
-//    
-//    convenience init(place: LKPlacemark, coordinate: CLLocationCoordinate2D) {
-//        let locationItem = LocationItem(place: place, date: NSDate(), coordinate: coordinate)
-//        self.init(locationItem: locationItem)
-//    }
-    
     init(locationItem: BaseLocationItem) {
         day = DayLocationInfo.beginningOfDay(locationItem.date)
         locationItems = [locationItem]

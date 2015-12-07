@@ -25,9 +25,9 @@ class LocationItem: BaseLocationItem {
         super.init()
     }
     
-    init(visit: CLVisit) {
+    init(visit: CLVisit, placemark: CLPlacemark?) {
         self.visit = visit
-        placemark = nil
+        self.placemark = placemark
         placemarkDate = nil
         placemarkCoordinate = nil
         super.init()

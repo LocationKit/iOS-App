@@ -41,11 +41,7 @@ final class AppDelegate : BaseAppDelegate, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didVisit visit: CLVisit) {
-        let locationItem = LocationItem(visit: visit)
-        
-        // Add this item
-        addLocationItem(locationItem)
-
+        let locationItem = LocationItem(visit: visit, placemark: nil)
         let dayInfo = DayLocationInfo(locationItem: locationItem)
         if let existingIndex = allLocationItems.indexOf(dayInfo) {
             let existingDayInfo = allLocationItems[existingIndex]
@@ -64,15 +60,27 @@ final class AppDelegate : BaseAppDelegate, CLLocationManagerDelegate {
                 locationItem.visit = visit
                 saveLocationHistory()
                 NSNotificationCenter.defaultCenter().postNotificationName(AppDelegate.locationHistoryDidChangeNotificationName, object: nil)
+            } else {
+                reverseGeocode(visit)
             }
         }
         
-        if notificationsEnabled {
-            let localNotification = UILocalNotification()
-            localNotification.alertBody = "Visit ended at \(locationItem.title)"
-            localNotification.timeZone = NSTimeZone.localTimeZone()
-            localNotification.fireDate = NSDate()
-            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+    }
+    
+    private func reverseGeocode(visit: CLVisit) {
+        let location = CLLocation(latitude: visit.coordinate.latitude, longitude: visit.coordinate.longitude)
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location) { [unowned self] (placemark, error) in
+            let locationItem = LocationItem(visit: visit, placemark: placemark?.first)
+            self.addLocationItem(locationItem)
+            
+            if self.notificationsEnabled {
+                let localNotification = UILocalNotification()
+                localNotification.alertBody = "Visit ended at \(locationItem.title)"
+                localNotification.timeZone = NSTimeZone.localTimeZone()
+                localNotification.fireDate = NSDate()
+                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+            }
         }
     }
     

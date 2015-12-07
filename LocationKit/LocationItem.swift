@@ -45,6 +45,10 @@ class LocationItem: BaseLocationItem {
             return ""
         }
     }
+    
+    private var place: LKPlacemark {
+        return placemark ?? visit!.place
+    }
 
     override var date: NSDate {
         return placemarkDate ?? visit!.arrivalDate
@@ -55,39 +59,39 @@ class LocationItem: BaseLocationItem {
     }
     
     override var venueName: String? {
-        return placemark?.venue?.name
+        return place.name
     }
     
     override var venueCategory: String? {
-        return placemark?.venue?.category
+        return place.venue?.category
     }
 
     override var venueSubcategory: String? {
-        return placemark?.venue?.subcategory
+        return place.venue?.subcategory
     }
     
     override var thoroughfare: String? {
-        return placemark?.thoroughfare
+        return place.thoroughfare
     }
     
     override var subThoroughfare: String? {
-        return placemark?.subThoroughfare
+        return place.subThoroughfare
     }
     
     override var locality: String? {
-        return placemark?.locality
+        return place.locality
     }
     
     override var administrativeArea: String? {
-        return placemark?.administrativeArea
+        return place.administrativeArea
     }
     
     override var postalCode: String? {
-        return placemark?.postalCode
+        return place.postalCode
     }
     
     override var detectionMethod: String? {
-        return placemark?.locationKitEntranceSource
+        return place.locationKitEntranceSource
     }
     
     override var isVisit: Bool {
