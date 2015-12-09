@@ -47,9 +47,7 @@ final class AppDelegate : BaseAppDelegate, CLLocationManagerDelegate {
             let existingDayInfo = allLocationItems[existingIndex]
             var exisitingVisitIndex: Int?
             for (someIndex, someLocationItem) in existingDayInfo.locationItems.enumerate() {
-                if someLocationItem.date == locationItem.date &&
-                    someLocationItem.coordinate.latitude == locationItem.coordinate.latitude &&
-                    someLocationItem.coordinate.longitude == locationItem.coordinate.longitude {
+                if someLocationItem.date == locationItem.date {
                         exisitingVisitIndex = someIndex
                         break
                 }
@@ -76,7 +74,7 @@ final class AppDelegate : BaseAppDelegate, CLLocationManagerDelegate {
             
             if self.notificationsEnabled {
                 let localNotification = UILocalNotification()
-                localNotification.alertBody = "Visit ended at \(locationItem.title)"
+                localNotification.alertBody = "Visit started at \(locationItem.title)"
                 localNotification.timeZone = NSTimeZone.localTimeZone()
                 localNotification.fireDate = NSDate()
                 UIApplication.sharedApplication().scheduleLocalNotification(localNotification)

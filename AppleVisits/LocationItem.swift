@@ -45,10 +45,6 @@ class LocationItem: BaseLocationItem {
         return placemarkCoordinate ?? visit!.coordinate
     }
     
-    override var venueName: String? {
-        return placemark?.name
-    }
-    
     override var thoroughfare: String? {
         return placemark?.thoroughfare
     }

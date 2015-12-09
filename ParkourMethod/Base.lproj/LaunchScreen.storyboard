@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,19 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hl-OM-epN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.043137254899999998" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="tVX-2F-xGV"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C35-gw-ucE">
-                                <rect key="frame" x="0.0" y="474" width="600" height="126"/>
-                                <animations/>
+                                <rect key="frame" x="0.0" y="536" width="600" height="64"/>
                                 <color key="backgroundColor" red="0.83921568627450982" green="0.043137254901960784" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="Ikz-WQ-MpT"/>
+                                    <constraint firstAttribute="height" constant="64" id="Ikz-WQ-MpT"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parkour Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a28-ww-2qD">
-                                <rect key="frame" x="150" y="474" width="300" height="74"/>
-                                <animations/>
+                                <rect key="frame" x="150" y="536" width="300" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="EpQ-3x-JES"/>
+                                    <constraint firstAttribute="height" constant="64" id="EpQ-3x-JES"/>
                                     <constraint firstAttribute="width" constant="300" id="X0Y-g8-vbV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
@@ -38,22 +43,23 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-ParkourMethod" translatesAutoresizingMaskIntoConstraints="NO" id="Aaw-KS-948">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Ocy-Z9-rlH"/>
                                     <constraint firstAttribute="width" constant="300" id="fEE-kn-hPf"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1hl-OM-epN" secondAttribute="trailing" id="1CR-NJ-tdM"/>
                             <constraint firstItem="Aaw-KS-948" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8nf-gd-X2F"/>
+                            <constraint firstItem="1hl-OM-epN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9sY-Gy-Djm"/>
                             <constraint firstItem="Aaw-KS-948" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Jqn-kp-VKi"/>
                             <constraint firstAttribute="trailing" secondItem="C35-gw-ucE" secondAttribute="trailing" id="OiL-CX-gV4"/>
+                            <constraint firstItem="1hl-OM-epN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="PRl-yN-36x"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="C35-gw-ucE" secondAttribute="bottom" id="RVY-Gh-hJs"/>
                             <constraint firstItem="C35-gw-ucE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="gjz-Ay-NxP"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="a28-ww-2qD" secondAttribute="bottom" constant="52" id="ire-nE-uVP"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="a28-ww-2qD" secondAttribute="bottom" id="ire-nE-uVP"/>
                             <constraint firstItem="a28-ww-2qD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mQi-vl-XyW"/>
                         </constraints>
                     </view>

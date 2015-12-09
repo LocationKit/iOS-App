@@ -51,9 +51,7 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
             let existingDayInfo = allLocationItems[existingIndex]
             var exisitingVisitIndex: Int?
             for (someIndex, someLocationItem) in existingDayInfo.locationItems.enumerate() {
-                if someLocationItem.date == locationItem.date &&
-                    someLocationItem.coordinate.latitude == locationItem.coordinate.latitude &&
-                    someLocationItem.coordinate.longitude == locationItem.coordinate.longitude {
+                if someLocationItem.date == locationItem.date {
                         exisitingVisitIndex = someIndex
                         break
                 }

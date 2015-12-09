@@ -60,10 +60,10 @@
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
-		D8F3DFDD1C13129D00EA0F16 /* Assets-AppleVisits.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */; };
-		D8F3DFDF1C1313F300EA0F16 /* Assets-Sense360.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */; };
-		D8F3DFE11C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */; };
-		D8F3DFE41C13178200EA0F16 /* Assets-LocationKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */; };
+		D8F3DFDD1C13129D00EA0F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDC1C13129D00EA0F16 /* Assets.xcassets */; };
+		D8F3DFDF1C1313F300EA0F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFDE1C1313F300EA0F16 /* Assets.xcassets */; };
+		D8F3DFE11C1314CA00EA0F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFE01C1314CA00EA0F16 /* Assets.xcassets */; };
+		D8F3DFE41C13178200EA0F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F3DFE31C13178200EA0F16 /* Assets.xcassets */; };
 		D8FC0A4E1BFF570D00AB660A /* BaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FC0A4D1BFF570D00AB660A /* BaseAppDelegate.swift */; };
 		D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FC0A511BFF570D00AB660A /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -120,10 +120,10 @@
 		D8C6E71A1C131BB400F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E71E1C131D5200F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C6E7281C13217F00F0C209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-AppleVisits.xcassets"; sourceTree = "<group>"; };
-		D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-Sense360.xcassets"; sourceTree = "<group>"; };
-		D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-ParkourMethod.xcassets"; sourceTree = "<group>"; };
-		D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets-LocationKit.xcassets"; sourceTree = "<group>"; };
+		D8F3DFDC1C13129D00EA0F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8F3DFDE1C1313F300EA0F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8F3DFE01C1314CA00EA0F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8F3DFE31C13178200EA0F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8FC0A4A1BFF570D00AB660A /* LocationKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FC0A4D1BFF570D00AB660A /* BaseAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppDelegate.swift; sourceTree = "<group>"; };
 		D8FC0A521BFF570D00AB660A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 			children = (
 				D89A1F841C138FE600CEBF53 /* AppDelegate.swift */,
 				D89A1F851C138FE600CEBF53 /* LocationItem.swift */,
-				D8F3DFDC1C13129D00EA0F16 /* Assets-AppleVisits.xcassets */,
+				D8F3DFDC1C13129D00EA0F16 /* Assets.xcassets */,
 				D87D528F1C12AA36000F345D /* LaunchScreen.storyboard */,
 				D87CC4081C129607005666E4 /* Info.plist */,
 			);
@@ -201,7 +201,7 @@
 			children = (
 				D89A1F961C13BCB600CEBF53 /* AppDelegate.swift */,
 				D89A1F971C13BCB600CEBF53 /* LocationItem.swift */,
-				D8F3DFDE1C1313F300EA0F16 /* Assets-Sense360.xcassets */,
+				D8F3DFDE1C1313F300EA0F16 /* Assets.xcassets */,
 				D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */,
 				D87DFD331C12A35F00F8E721 /* Info.plist */,
 				D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */,
@@ -214,7 +214,7 @@
 			children = (
 				D89A1F8D1C13A6FF00CEBF53 /* AppDelegate.swift */,
 				D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */,
-				D8F3DFE01C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets */,
+				D8F3DFE01C1314CA00EA0F16 /* Assets.xcassets */,
 				D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */,
 				D87DFD4C1C12A38F00F8E721 /* Info.plist */,
 				D89A1F931C13A7D100CEBF53 /* Bridging-Header.h */,
@@ -229,7 +229,7 @@
 			children = (
 				D89A1F761C1350E900CEBF53 /* AppDelegate.swift */,
 				D89A1F821C13681C00CEBF53 /* LocationItem.swift */,
-				D8F3DFE31C13178200EA0F16 /* Assets-LocationKit.xcassets */,
+				D8F3DFE31C13178200EA0F16 /* Assets.xcassets */,
 				D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */,
 				D8FC0A591BFF570D00AB660A /* Info.plist */,
 				D83E8D9C1BFF59BD00477D2A /* Bridging-Header.h */,
@@ -425,7 +425,7 @@
 				D87D52901C12AA36000F345D /* LaunchScreen.storyboard in Resources */,
 				D87D52991C12AF5A000F345D /* Assets-Shared.xcassets in Resources */,
 				D87CC4011C129607005666E4 /* Main.storyboard in Resources */,
-				D8F3DFDD1C13129D00EA0F16 /* Assets-AppleVisits.xcassets in Resources */,
+				D8F3DFDD1C13129D00EA0F16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +436,7 @@
 				D87D52971C12AF48000F345D /* Assets-Shared.xcassets in Resources */,
 				D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */,
 				D87DFD2C1C12A35F00F8E721 /* Main.storyboard in Resources */,
-				D8F3DFDF1C1313F300EA0F16 /* Assets-Sense360.xcassets in Resources */,
+				D8F3DFDF1C1313F300EA0F16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +446,7 @@
 			files = (
 				D87D52981C12AF59000F345D /* Assets-Shared.xcassets in Resources */,
 				D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */,
-				D8F3DFE11C1314CA00EA0F16 /* Assets-ParkourMethod.xcassets in Resources */,
+				D8F3DFE11C1314CA00EA0F16 /* Assets.xcassets in Resources */,
 				D87DFD451C12A38F00F8E721 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F3DFE41C13178200EA0F16 /* Assets-LocationKit.xcassets in Resources */,
+				D8F3DFE41C13178200EA0F16 /* Assets.xcassets in Resources */,
 				D87D529A1C12AF5B000F345D /* Assets-Shared.xcassets in Resources */,
 				D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */,
 				D8FC0A531BFF570D00AB660A /* Main.storyboard in Resources */,
@@ -896,7 +896,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9A947C858EDC481A3C6EFB2 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-LocationKit";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -921,7 +921,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B33730A44457B6BA9BB710A2 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-LocationKit";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
