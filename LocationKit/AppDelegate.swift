@@ -15,7 +15,7 @@ final class AppDelegate : BaseAppDelegate, LKLocationManagerDelegate {
     
     override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        appName = "Location Kit"
+        appName = "LocationKit"
         appColor = UIColor(red: 253.0/255.0, green: 95.0/255.0, blue: 19.0/255.0, alpha: 1.0)
         detectionMethodSupported = true
         helpUrlString = "https://locationkit.io/features/"
