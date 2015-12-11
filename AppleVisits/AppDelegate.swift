@@ -19,7 +19,7 @@ final class AppDelegate : BaseAppDelegate, CLLocationManagerDelegate {
     
     override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        appName = "Apple Visits"
+        appName = "CoreLocation"
         appColor = UIColor(red: 172.0/255.0, green: 172.0/255.0, blue: 172.0/255.0, alpha: 1.0)
         helpUrlString = "https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CoreLocation_Framework/"
 

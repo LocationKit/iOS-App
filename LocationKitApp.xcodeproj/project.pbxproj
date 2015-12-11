@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		861CC528F74AD87E4D4CA8D8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D83E8D991BFF595700477D2A /* LocationVisitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8D981BFF595700477D2A /* LocationVisitsController.swift */; };
 		D83E8D9B1BFF597100477D2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
 		D83E8DA51BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
@@ -57,6 +56,7 @@
 		D89A1FA21C13CB1900CEBF53 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1FA11C13CB1900CEBF53 /* CoreMotion.framework */; };
 		D89A1FA41C13CB1D00CEBF53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1FA31C13CB1D00CEBF53 /* SystemConfiguration.framework */; };
 		D89A1FA71C13CC1A00CEBF53 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F9C1C13BEA800CEBF53 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8A229AD1C1A81EE00E8D75E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0707CDDA7F84CBCC8EB274DD /* Pods.framework */; };
 		D8C6E7201C131D5800F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E71D1C131D5200F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7231C131F6000F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */; };
 		D8C6E7361C1332D900F0C209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6E7271C13217E00F0C209 /* LaunchScreen.storyboard */; };
@@ -165,8 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A229AD1C1A81EE00E8D75E /* Pods.framework in Frameworks */,
 				D83E8D9B1BFF597100477D2A /* MapKit.framework in Frameworks */,
-				861CC528F74AD87E4D4CA8D8 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +383,18 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = SocialRadar;
 				TargetAttributes = {
+					D87CC3F01C129607005666E4 = {
+						DevelopmentTeam = 89TK7S3NYA;
+					};
+					D87DFD1B1C12A35F00F8E721 = {
+						DevelopmentTeam = 89TK7S3NYA;
+					};
+					D87DFD341C12A38F00F8E721 = {
+						DevelopmentTeam = 89TK7S3NYA;
+					};
 					D8FC0A491BFF570D00AB660A = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 89TK7S3NYA;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -630,7 +640,7 @@
 				OTHER_LDFLAGS = "";
 				PODS_FRAMEWORK_BUILD_PATH = "";
 				PODS_ROOT = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.corelocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -657,7 +667,7 @@
 				OTHER_LDFLAGS = "";
 				PODS_FRAMEWORK_BUILD_PATH = "";
 				PODS_ROOT = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.applevisits;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.corelocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -693,7 +703,7 @@
 				);
 				PODS_FRAMEWORK_BUILD_PATH = "";
 				PODS_ROOT = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.sense360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -731,7 +741,7 @@
 				);
 				PODS_FRAMEWORK_BUILD_PATH = "";
 				PODS_ROOT = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.sense360;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.sense360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -766,7 +776,7 @@
 				);
 				PODS_FRAMEWORK_BUILD_PATH = "";
 				PODS_ROOT = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.parkourmethod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParkourMethod/Bridging-Header.h";
@@ -801,7 +811,7 @@
 				);
 				PODS_FRAMEWORK_BUILD_PATH = "";
 				PODS_ROOT = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.testapp.parkourmethod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.parkourmethod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParkourMethod/Bridging-Header.h";
@@ -900,16 +910,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ParkourMethod",
 					"$(PROJECT_DIR)/Sense360",
+					"$(PROJECT_DIR)/Pods/LocationKit",
 				);
 				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.locationkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LocationKit/Bridging-Header.h";
@@ -925,16 +936,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ParkourMethod",
 					"$(PROJECT_DIR)/Sense360",
+					"$(PROJECT_DIR)/Pods/LocationKit",
 				);
 				INFOPLIST_FILE = LocationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.socialradar.LocationKitApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipside5.locationapp.locationkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LocationKit/Bridging-Header.h";
