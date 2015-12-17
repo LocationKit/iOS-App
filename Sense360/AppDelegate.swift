@@ -21,7 +21,7 @@ final class AppDelegate : BaseAppDelegate, TriggerFiredDelegate {
         currentPlaceSupported = false
         helpUrlString = "http://www.sense360.com/docs.html"
 
-        SenseSdk.enableSdkWithKey("")
+        SenseSdk.enableSdkWithKey("34bd012b-5782-4ed3-9598-1bd4fefb9e24")
 
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
