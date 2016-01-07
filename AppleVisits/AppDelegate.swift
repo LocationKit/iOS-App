@@ -1,9 +1,9 @@
 //
-//  File.swift
-//  LocationKitApp
+//  AppDelegate.swift
+//  Visits-CoreLocation
 //
 //  Created by Michael Sanford on 12/5/15.
-//  Copyright © 2015 SocialRadar. All rights reserved.
+//  Copyright © 2015-2016 Infinity Point. All rights reserved.
 //
 
 import UIKit

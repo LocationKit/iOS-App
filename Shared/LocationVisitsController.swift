@@ -1,9 +1,9 @@
 //
 //  LocationEntriesController.swift
-//  LocationKit
+//  Visits-Shared
 //
 //  Created by Michael Sanford on 11/19/15.
-//  Copyright © 2015 SocialRadar. All rights reserved.
+//  Copyright © 2015-2016 Infinity Point. All rights reserved.
 //
 
 import UIKit

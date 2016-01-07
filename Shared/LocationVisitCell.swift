@@ -1,15 +1,16 @@
 //
 //  LocationVisitCell.swift
-//  LocationKitApp
+//  Visits-Shared
 //
 //  Created by Michael Sanford on 11/20/15.
-//  Copyright © 2015 SocialRadar. All rights reserved.
+//  Copyright © 2015-2016 Infinity Point. All rights reserved.
 //
 
 import UIKit
 
 class LocationVisitCell: UITableViewCell {
     static let reuseIdentifier = "LocationVisitCell"
+    
     private static let timeFormatter = NSDateFormatter()
     private static let unknownCategoryImage: UIImage? = UIImage(named: "Unknown")
 

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  LocationKitApp
+//  Visits-Shared
 //
 //  Created by Michael Sanford on 11/20/15.
-//  Copyright © 2015 SocialRadar. All rights reserved.
+//  Copyright © 2015-2016 Infinity Point. All rights reserved.
 //
 
 import UIKit
@@ -96,7 +96,7 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: Settings
-    private let trackingKey = "com.socialradar.LocationKitApp.trackingEnabled"
+    private let trackingKey = "com.infinitypoint.locationapp.trackingEnabled"
     var trackingEnabled: Bool {
         get {
             return NSUserDefaults.standardUserDefaults().boolForKey(trackingKey)
@@ -113,7 +113,7 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    private let notificationsKey = "com.socialradar.LocationKitApp.notificationsEnabled"
+    private let notificationsKey = "com.infinitypoint.locationapp.notificationsEnabled"
     var notificationsEnabled: Bool {
         get {
             return NSUserDefaults.standardUserDefaults().boolForKey(notificationsKey)

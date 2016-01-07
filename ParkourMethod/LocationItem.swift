@@ -1,9 +1,9 @@
 //
 //  LocationItem.swift
-//  LocationKitApp
+//  Visits-ParkourMethod
 //
 //  Created by Michael Sanford on 12/5/15.
-//  Copyright © 2015 SocialRadar. All rights reserved.
+//  Copyright © 2015-2016 Infinity Point. All rights reserved.
 //
 
 import Foundation
@@ -56,10 +56,6 @@ class LocationItem: BaseLocationItem {
     
     override var thoroughfare: String? {
         return fullAddress
-    }
-    
-    override var subThoroughfare: String? {
-        return nil
     }
     
     override var locality: String? {

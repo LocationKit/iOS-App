@@ -1,9 +1,9 @@
 //
-//  File.swift
-//  LocationKitApp
+//  AppDelegate.swift
+//  Visits-ParkourMethod
 //
 //  Created by Michael Sanford on 12/5/15.
-//  Copyright © 2015 SocialRadar. All rights reserved.
+//  Copyright © 2015-2016 Infinity Point. All rights reserved.
 //
 
 import UIKit
@@ -20,7 +20,16 @@ final class AppDelegate : BaseAppDelegate {
         currentPlaceSupported = false
         helpUrlString = "https://www.parkourmethod.com/docs/"
         
-        parkour.trackPOIWithHandler { [unowned self] (poiName, categoryOne, categoryTwo, fullAddress, city, state, zipCode, poiLocation, userLocation, distance) in
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    override func addCurrentPlace(handler: (CLLocationCoordinate2D?, NSError?) -> Void) {
+    }
+    
+    override func startLocationTracking() {
+        parkour.start()
+        
+        parkour.trackPOIWithHandler() { [unowned self] (poiName, categoryOne, categoryTwo, fullAddress, city, state, zipCode, poiLocation, userLocation, distance) in
             let locationItem = LocationItem(poiName: poiName, categoryOne: categoryOne, categoryTwo: categoryTwo, fullAddress: fullAddress, city: city, state: state, zipCode: zipCode, poiLocation: poiLocation, userLocation: userLocation, distance: distance, date: NSDate())
             
             // Add this item
@@ -36,15 +45,6 @@ final class AppDelegate : BaseAppDelegate {
                 UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
             }
         }
-        
-        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
-    }
-    
-    override func addCurrentPlace(handler: (CLLocationCoordinate2D?, NSError?) -> Void) {
-    }
-    
-    override func startLocationTracking() {
-        parkour.start()
     }
     
     override func stopLocationTracking() {

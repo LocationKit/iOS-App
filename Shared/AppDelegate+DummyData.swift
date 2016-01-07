@@ -1,9 +1,8 @@
 //
 //  AppDelegate+DummyData.swift
-//  LocationKitApp
 //
 //  Created by Michael Sanford on 11/21/15.
-//  Copyright © 2015 SocialRadar. All rights reserved.
+//  Copyright © 2015-2016 Infinity Point. All rights reserved.
 //
 
 import Foundation

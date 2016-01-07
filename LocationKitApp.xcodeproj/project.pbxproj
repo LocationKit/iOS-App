@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83AC6901C3C9E1800B50004 /* parkour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83AC68F1C3C9E1800B50004 /* parkour.framework */; };
+		D83AC6911C3C9E1800B50004 /* parkour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83AC68F1C3C9E1800B50004 /* parkour.framework */; };
 		D83E8D991BFF595700477D2A /* LocationVisitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8D981BFF595700477D2A /* LocationVisitsController.swift */; };
 		D83E8D9B1BFF597100477D2A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83E8D9A1BFF597100477D2A /* MapKit.framework */; };
 		D83E8DA51BFF5E6A00477D2A /* LocationVisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E8DA41BFF5E6A00477D2A /* LocationVisitCell.swift */; };
@@ -46,7 +48,6 @@
 		D89A1F831C13681C00CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F821C13681C00CEBF53 /* LocationItem.swift */; };
 		D89A1F881C138FF700CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F851C138FE600CEBF53 /* LocationItem.swift */; };
 		D89A1F891C138FFC00CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F841C138FE600CEBF53 /* AppDelegate.swift */; };
-		D89A1F8C1C13A58A00CEBF53 /* parkour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F8A1C13A58300CEBF53 /* parkour.framework */; };
 		D89A1F911C13A70500CEBF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F8D1C13A6FF00CEBF53 /* AppDelegate.swift */; };
 		D89A1F921C13A70800CEBF53 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */; };
 		D89A1F951C13AA2F00CEBF53 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A1F941C13AA2F00CEBF53 /* AdSupport.framework */; };
@@ -86,6 +87,7 @@
 		0707CDDA7F84CBCC8EB274DD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A947C858EDC481A3C6EFB2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B33730A44457B6BA9BB710A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D83AC68F1C3C9E1800B50004 /* parkour.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = parkour.framework; sourceTree = "<group>"; };
 		D83E8D981BFF595700477D2A /* LocationVisitsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVisitsController.swift; sourceTree = "<group>"; };
 		D83E8D9A1BFF597100477D2A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D83E8D9C1BFF59BD00477D2A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "LocationKit/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -106,7 +108,6 @@
 		D89A1F821C13681C00CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		D89A1F841C138FE600CEBF53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89A1F851C138FE600CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
-		D89A1F8A1C13A58300CEBF53 /* parkour.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = parkour.framework; sourceTree = "<group>"; };
 		D89A1F8D1C13A6FF00CEBF53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89A1F8E1C13A6FF00CEBF53 /* LocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		D89A1F931C13A7D100CEBF53 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -155,8 +156,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83AC6911C3C9E1800B50004 /* parkour.framework in Frameworks */,
 				D87DFD401C12A38F00F8E721 /* MapKit.framework in Frameworks */,
-				D89A1F8C1C13A58A00CEBF53 /* parkour.framework in Frameworks */,
 				D89A1F951C13AA2F00CEBF53 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83AC6901C3C9E1800B50004 /* parkour.framework in Frameworks */,
 				D8A229AD1C1A81EE00E8D75E /* Pods.framework in Frameworks */,
 				D83E8D9B1BFF597100477D2A /* MapKit.framework in Frameworks */,
 			);
@@ -218,7 +220,7 @@
 				D8C6E7191C131BB400F0C209 /* LaunchScreen.storyboard */,
 				D87DFD4C1C12A38F00F8E721 /* Info.plist */,
 				D89A1F931C13A7D100CEBF53 /* Bridging-Header.h */,
-				D89A1F8A1C13A58300CEBF53 /* parkour.framework */,
+				D83AC68F1C3C9E1800B50004 /* parkour.framework */,
 			);
 			name = "Parkour Method";
 			path = ParkourMethod;
@@ -326,6 +328,7 @@
 				D87DFD261C12A35F00F8E721 /* Frameworks */,
 				D87DFD291C12A35F00F8E721 /* Resources */,
 				D89A1FA81C13CC1B00CEBF53 /* Embed Frameworks */,
+				D8A49E9B1C22E1B6003F906C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -519,6 +522,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D8A49E9B1C22E1B6003F906C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Base script: http://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nFRAMEWORK_NAME=\"SenseSdk.framework\"\n# Check if Framework is present.\nFRAMEWORK_LOCATION=$(find \"$APP_PATH\" -name \"$FRAMEWORK_NAME\" -type d)\nif [ -z $FRAMEWORK_LOCATION ]; then\necho \"Couldn't find SenseSdk.framework in $APP_PATH. Make sure 'Embed Frameworks' build phase is listed before the 'Strip Unused Architectures' build phase.\"\nexit 1\nfi\n# This script strips unused architectures\nfind \"$APP_PATH\" -name \"$FRAMEWORK_NAME\" -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\nEXTRACTED_ARCHS=()\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
